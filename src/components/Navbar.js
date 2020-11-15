@@ -3,7 +3,7 @@ import { Nav, Button, Navbar, Container } from "react-bootstrap";
 
 export default function NavBar() {
   return (
-    <Navbar bg="light" expand="lg" className="py-2 py-md-4">
+    <Navbar bg="white" expand="lg" className="py-2 py-md-4">
       <Container>
         <Navbar.Brand href="#home">Our Logo</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
