@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Banner from "../images/cover-2.png";
-import { Col, Row, Button } from "react-bootstrap";
+import { Col, Button, Container } from "react-bootstrap";
 
 export default class SlickSlider extends Component {
   render() {
@@ -28,7 +28,7 @@ export default class SlickSlider extends Component {
               title={content.title}
               description={content.description}
               button={content.button}
-              button={content.button}
+              button2={content.button}
             />
           ))}
         </Slider>
@@ -39,27 +39,27 @@ export default class SlickSlider extends Component {
 
 function SlideSlider(props) {
   return (
-    <Col lg={12} className="px-0">
-      <div className="full-banner">
+    <div className="full-banner">
+      <Col lg={12} className="px-0">
         <img src={props.image} alt={props.alt} className="img-fluid" />
+      </Col>
 
-        <div className="banner-content">
-          <h5 className="subtitle mt-5">{props.intro}</h5>
-          <h1 className="main-title mt-3">{props.title}</h1>
-          <h5 className="subtitle">{props.description}</h5>
-          <div className="banner-logos d-flex mt-5">
-            <div className="wish-lokalate">
-              <h5>Logo Wish</h5>
-              <Button variant="outline-light px-3">{props.button}</Button>
-            </div>
-            <div className="wish-online ml-5">
-              <h5>Wish Logo</h5>
-              <Button variant="outline-light px-3">{props.button}</Button>
-            </div>
+      <div className="banner-content mt-5">
+        <h5 className="main-title mt-5">{props.title}</h5>
+        <h1 className="subtitle mt-3">{props.intro}</h1>
+        <h5 className="subtitle">{props.description}</h5>
+        <div className="banner-logos d-flex mt-5">
+          <div className="wish-lokalate">
+            <h5>Logo Wish</h5>
+            <Button variant="outline-light px-3">{props.button}</Button>
+          </div>
+          <div className="wish-online ml-5">
+            <h5>Wish Logo</h5>
+            <Button variant="outline-light px-3">{props.button}</Button>
           </div>
         </div>
       </div>
-    </Col>
+    </div>
   );
 }
 
@@ -67,19 +67,21 @@ const sliderContents = [
   {
     image: Banner,
     alt: `Banner Image`,
-    intro: "World Indonesia Scholarship",
-    title: "The Biggest Scholarship & Education Event in Indonesia",
+    title: `WISH
+    (World Indonesia Scholarship)`,
+    intro: "The Biggest Scholarship & Education Event in Indonesia",
     description:
-      "Mewujudkan Pemerataan Informasi &amp; Kesempatan Beasiswa bagi seluruh Rakyat Indonesia.",
+      "Mewujudkan Pemerataan Informasi & Kesempatan Beasiswa bagi seluruh Rakyat Indonesia.",
     button: "Register",
+    button2: "Register",
   },
-  {
-    image: Banner,
-    alt: `Banner Image`,
-    intro: "World Indonesia Scholarship",
-    title: "The Biggest Scholarship & Education Event in Indonesia",
-    description:
-      "Mewujudkan Pemerataan Informasi &amp; Kesempatan Beasiswa bagi seluruh Rakyat Indonesia.",
-    button: "Register",
-  },
+  // {
+  //   image: Banner,
+  //   alt: `Banner Image`,
+  //   title: "World Indonesia Scholarship",
+  //   intro: "The Biggest Scholarship & Education Event in Indonesia",
+  //   description:
+  //     "Mewujudkan Pemerataan Informasi &amp; Kesempatan Beasiswa bagi seluruh Rakyat Indonesia.",
+  //   button: "Register",
+  // },
 ];
