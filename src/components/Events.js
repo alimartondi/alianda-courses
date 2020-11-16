@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function EventsSection() {
   return (
-    <section className="events-area mb-5" id="events">
+    <section className="events-area" id="events">
       <Container>
         <Row>
           <Col lg={12} className="text-center">
@@ -12,24 +12,23 @@ export default function EventsSection() {
           </Col>
         </Row>
         <Row>
-          <Col
-            lg={12}
-            className="d-block d-md-flex flex-md-wrap justify-content-between"
-          >
-            {eventsContents.map((content, i) => (
-              <div className="events-card mt-5">
-                <div className="card-img p-0">
-                  <img
-                    src={content.image}
-                    alt={content.alt}
-                    className="img-fluid"
-                  />
+          <Col lg={12} className="events-items d-flex">
+            <div className="events-items-grid">
+              {eventsContents.map((content, i) => (
+                <div className="events-card mt-5" key={i}>
+                  <div className="card-img p-0">
+                    <img
+                      src={content.image}
+                      alt={content.alt}
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="card-body">
+                    <p className="description">{content.body}</p>
+                  </div>
                 </div>
-                <div className="card-body">
-                  <p className="description">{content.body}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </Col>
         </Row>
       </Container>

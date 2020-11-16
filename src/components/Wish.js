@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function WishSection() {
   return (
-    <section className="wish-information mb-5" id="wish">
+    <section className="wish-information mt-5" id="wish">
       <Container>
         <Row>
           <Col lg={12} className="text-center mt-5">
@@ -23,7 +23,7 @@ export default function WishSection() {
             />
           </Col>
           <Col lg={6}>
-            <p className="description">
+            <p className="description mt-4 mt-xl-0">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
               distinctio porro corrupti sint quasi consequatur velit quibusdam
               iure eos tenetur. Architecto quo molestiae temporibus cum

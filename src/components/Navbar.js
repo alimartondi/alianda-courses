@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { Container } from "react-bootstrap";
 import Burger from "react-css-burger";
+import "../style/navbar.css";
+import "../style/style.css";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -15,7 +17,6 @@ export default function NavBar() {
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-logo">
-            {/* <img src="" alt="" /> */}
             <h5>Our Logo</h5>
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
@@ -28,7 +29,18 @@ export default function NavBar() {
               duration={500}
               className="nav-link"
             >
-              Tentang
+              Wish 3.0
+            </Link>
+            <Link
+              activeClass="active"
+              to="programs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="nav-link"
+            >
+              Program
             </Link>
             <Link
               activeClass="active"
@@ -39,29 +51,18 @@ export default function NavBar() {
               duration={500}
               className="nav-link"
             >
-              Events
-            </Link>
-            <Link
-              activeClass="active"
-              to="programs"
-              spy={true}
-              smooth={true}
-              offset={120}
-              duration={500}
-              className="nav-link"
-            >
-              Program
-            </Link>
-            <Link
-              activeClass="active"
-              to="3section1"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="nav-link"
-            >
               Event
+            </Link>
+            <Link
+              activeClass="active"
+              to="footer"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="nav-link"
+            >
+              Contact Us
             </Link>
           </div>
           <Burger
@@ -87,7 +88,7 @@ const useScrollHandler = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      const scrollCheck = window.scrollY < 8;
+      const scrollCheck = window.scrollY < 2;
       if (scrollCheck !== scroll) {
         setScroll(scrollCheck);
       }

@@ -14,24 +14,23 @@ export default function ProgramsSection() {
           </Col>
         </Row>
         <Row>
-          <Col
-            lg={12}
-            className="d-block d-md-flex flex-md-wrap justify-content-between"
-          >
-            {programsContents.map((content, i) => (
-              <div className="events-card mt-5">
-                <div className="card-img p-0">
-                  <img
-                    src={content.image}
-                    alt={content.alt}
-                    className="img-fluid"
-                  />
+          <Col lg={12} className="programs-items d-flex">
+            <div className="programs-items-grid">
+              {programsContents.map((content, i) => (
+                <div className="events-card mt-5" key={i}>
+                  <div className="card-img p-0">
+                    <img
+                      src={content.image}
+                      alt={content.alt}
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="card-body">
+                    <p className="description">{content.body}</p>
+                  </div>
                 </div>
-                <div className="card-body">
-                  <p className="description">{content.body}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </Col>
         </Row>
       </Container>
