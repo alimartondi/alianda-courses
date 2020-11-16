@@ -8,7 +8,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
   return (
-    <section className="footer-area mt-5" id="footer">
+    <section className="footer-area pb-5" id="footer">
       <Container>
         <Row>
           <Col lg={12} className="footer-items text-center">

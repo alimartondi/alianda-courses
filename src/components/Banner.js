@@ -44,10 +44,9 @@ function SlideSlider(props) {
         <img src={props.image} alt={props.alt} className="img-fluid" />
 
         <div className="banner-content mt-5">
-          <h5 className="main-title mt-5">{props.title}</h5>
-          <h1 className="subtitle mt-3">{props.intro}</h1>
-          <h5 className="subtitle">{props.description}</h5>
-          <div className="banner-logos d-flex justify-content-center mt-5">
+          <h1 className="main-title">{props.title}</h1>
+          <h5 className="subtitle mt-3">{props.intro}</h5>
+          <div className="banner-logos d-flex justify-content-center justify-content-md-start mt-5">
             <div className="wish-lokalate">
               <h5>Logo Wish</h5>
               <Button variant="outline-light px-3">{props.button}</Button>

@@ -10,6 +10,8 @@ export default function NavBar() {
     active: false,
   });
 
+  const open = () => setState(!open);
+
   const isOnTop = useScrollHandler();
 
   return (
@@ -28,6 +30,7 @@ export default function NavBar() {
               offset={-70}
               duration={500}
               className="nav-link"
+              onClick={open}
             >
               Wish 3.0
             </Link>
@@ -39,6 +42,7 @@ export default function NavBar() {
               offset={-70}
               duration={500}
               className="nav-link"
+              onClick={open}
             >
               Program
             </Link>
@@ -50,6 +54,7 @@ export default function NavBar() {
               offset={-70}
               duration={500}
               className="nav-link"
+              onClick={open}
             >
               Event
             </Link>
@@ -61,6 +66,7 @@ export default function NavBar() {
               offset={0}
               duration={500}
               className="nav-link"
+              onClick={open}
             >
               Contact Us
             </Link>
