@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
 import "../style/style.css";
@@ -70,6 +70,7 @@ export default function NavBar() {
             >
               Contact Us
             </Link>
+            <Button variant="warning mt-3 mt-xl-0">Daftar Sekarang!</Button>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}
