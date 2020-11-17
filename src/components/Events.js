@@ -29,8 +29,8 @@ export default function EventsSection() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="mx-0 px-0">
-            <div className="events-items px-3">
+          <Col lg={12}>
+            <div className="events-items">
               <div className="events-items-grid">
                 {eventsContents.map((content, i) => (
                   <div className="events-card mt-4" key={i}>

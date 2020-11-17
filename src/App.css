@@ -155,6 +155,7 @@ code {
   border-color: var(--main-blue) !important;
 }
 .btn-outline-info{
+  color: var(--main-blue) !important;
   border-color: var(--main-blue) !important;
 }
 .btn-outline-info:hover{

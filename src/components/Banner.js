@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Banner from "../images/cover-2.png";
 import { Col, Button, Container } from "react-bootstrap";
 
@@ -15,6 +14,7 @@ export default class SlickSlider extends Component {
       slidesToScroll: 1,
       arrows: false,
       autoplay: true,
+      pauseOnHover: false,
     };
     return (
       <div className="slider">
@@ -28,7 +28,7 @@ export default class SlickSlider extends Component {
               title={content.title}
               description={content.description}
               button={content.button}
-              button2={content.button}
+              button2={content.button2}
             />
           ))}
         </Slider>
@@ -46,14 +46,14 @@ function SlideSlider(props) {
         <div className="banner-content mt-5">
           <h1 className="main-title">{props.title}</h1>
           <h5 className="subtitle mt-3">{props.intro}</h5>
-          <div className="banner-logos d-flex justify-content-center justify-content-md-start mt-5">
+          <div className="banner-logos d-block d-md-flex justify-content-center justify-content-md-start mt-5">
             <div className="wish-lokalate">
-              <h5>Logo Wish</h5>
-              <Button variant="outline-light px-3">{props.button}</Button>
+              <Button variant="light px-3">{props.button}</Button>
             </div>
-            <div className="wish-online ml-5">
-              <h5>Wish Logo</h5>
-              <Button variant="outline-light px-3">{props.button}</Button>
+            <div className="wish-online ml-xl-2">
+              <Button variant="outline-light px-3 mt-3 mt-md-0">
+                {props.button2}
+              </Button>
             </div>
           </div>
         </div>
@@ -71,8 +71,8 @@ const sliderContents = [
     intro: "The Biggest Scholarship & Education Event in Indonesia",
     description:
       "Mewujudkan Pemerataan Informasi & Kesempatan Beasiswa bagi seluruh Rakyat Indonesia.",
-    button: "Register",
-    button2: "Register",
+    button: "Registrasi Peserta",
+    button2: "Daftar Volunteer",
   },
   {
     image: Banner,
@@ -81,6 +81,17 @@ const sliderContents = [
     intro: "The Biggest Scholarship & Education Event in Indonesia",
     description:
       "Mewujudkan Pemerataan Informasi &amp; Kesempatan Beasiswa bagi seluruh Rakyat Indonesia.",
-    button: "Register",
+    button: "Registrasi Peserta",
+    button2: "Daftar Volunteer",
+  },
+  {
+    image: Banner,
+    alt: `Banner Image`,
+    title: "World Indonesia Scholarship",
+    intro: "The Biggest Scholarship & Education Event in Indonesia",
+    description:
+      "Mewujudkan Pemerataan Informasi &amp; Kesempatan Beasiswa bagi seluruh Rakyat Indonesia.",
+    button: "Registrasi Peserta",
+    button2: "Daftar Volunteer",
   },
 ];

@@ -34,7 +34,7 @@ export default function NavBar() {
               to="wish"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-30}
               duration={500}
               className="nav-link"
               onClick={open}
@@ -46,7 +46,7 @@ export default function NavBar() {
               to="events"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-30}
               duration={500}
               className="nav-link"
               onClick={open}
@@ -58,7 +58,7 @@ export default function NavBar() {
               to="programs"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-30}
               duration={500}
               className="nav-link"
               onClick={open}
@@ -70,7 +70,7 @@ export default function NavBar() {
               to="footer"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={30}
               duration={500}
               className="nav-link"
               onClick={open}
