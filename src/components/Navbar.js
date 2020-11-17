@@ -34,7 +34,7 @@ export default function NavBar() {
               to="wish"
               spy={true}
               smooth={true}
-              offset={-30}
+              offset={-70}
               duration={500}
               className="nav-link"
               onClick={open}
@@ -46,7 +46,7 @@ export default function NavBar() {
               to="events"
               spy={true}
               smooth={true}
-              offset={-30}
+              offset={-60}
               duration={500}
               className="nav-link"
               onClick={open}

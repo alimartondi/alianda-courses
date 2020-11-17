@@ -50,6 +50,14 @@
   /* ===End of Banner=== */
   
   /* ===Events & Programs=== */
+  .events-area.container{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
   .programs-items,
   .events-items{
     position: relative;
@@ -151,16 +159,12 @@
   .partner-area{
     padding-bottom: 100px;
   }
-  .partner-card{
-    background-color: transparent;
-    height: 100px;
-    padding-right: 1rem;
-  }
+  
   .partner-card{
     background-color: #fff;
     border-radius: 5px;
     height: 100px;
-    padding-top: 20px;
+    padding-top: 10px 10px;
     padding-right: 1rem;
     text-align: center;
     -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.2);

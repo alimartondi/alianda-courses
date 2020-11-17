@@ -20,38 +20,38 @@ import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 
 export default function EventsSection() {
   return (
-    <section className="events-area bg-light" id="events">
-      <Container>
-        <Row>
-          <Col lg={12} className="text-center mt-3">
-            <h2 className="second-title">Events</h2>
-            <p className="description">Roadshow 15 Kota di Indonesia</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg={12}>
-            <div className="events-items">
-              <div className="events-items-grid">
-                {eventsContents.map((content, i) => (
-                  <div className="events-card mt-4" key={i}>
-                    <Card.Header className="card-header">
-                      <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
-                      Postponed
-                    </Card.Header>
-                    <div className="card-img p-0">
-                      <img src={content.image} alt={content.alt} />
-                    </div>
-                    <Card.Body className="card-body">
-                      <p className="description">{content.body}</p>
-                    </Card.Body>
+    // <section className="events-area bg-light" id="events">
+    <Container className="events-area">
+      <Row>
+        <Col lg={12} className="text-center mt-3">
+          <h2 className="second-title">Events</h2>
+          <p className="description">Roadshow 15 Kota di Indonesia</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col lg={12}>
+          <div className="events-items">
+            <div className="events-items-grid">
+              {eventsContents.map((content, i) => (
+                <div className="events-card mt-4" key={i}>
+                  <Card.Header className="card-header">
+                    <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+                    Postponed
+                  </Card.Header>
+                  <div className="card-img p-0">
+                    <img src={content.image} alt={content.alt} />
                   </div>
-                ))}
-              </div>
+                  <Card.Body className="card-body">
+                    <p className="description">{content.body}</p>
+                  </Card.Body>
+                </div>
+              ))}
             </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+          </div>
+        </Col>
+      </Row>
+    </Container>
+    // </section>
   );
 }
 

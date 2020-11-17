@@ -28,13 +28,13 @@ export default function Footer() {
               <Link to="banner" spy={true} smooth={true} activeClass="none">
                 Home
               </Link>
-              <Link to="wish" spy={true} smooth={true}>
+              <Link to="wish" spy={true} smooth={true} offset={-60}>
                 Wish 3.0
               </Link>
-              <Link to="programs" spy={true} smooth={true} activeClass="active">
+              <Link to="programs" spy={true} smooth={true} offset={-30}>
                 Program
               </Link>
-              <Link to="events" spy={true} smooth={true}>
+              <Link to="events" spy={true} smooth={true} offset={-60}>
                 Events
               </Link>
             </div>

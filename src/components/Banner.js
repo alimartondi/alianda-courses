@@ -39,7 +39,7 @@ export default class SlickSlider extends Component {
 
 function SlideSlider(props) {
   return (
-    <div className="full-banner">
+    <div className="full-banner" id="banner">
       <Col lg={12} className="px-0">
         <img src={props.image} alt={props.alt} className="img-fluid" />
 
