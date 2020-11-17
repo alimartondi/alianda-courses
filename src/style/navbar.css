@@ -19,8 +19,7 @@
   transition: all 0.3s;
 }
 
-.navbar-brand img {
-  max-height: 26px;
+.navbar-logo img {
   cursor: pointer;
 }
 
@@ -45,7 +44,6 @@
   background-color: #ffffff;
   top: 0;
   left: 0;
-  
   transition: all 0.3s ease;
   opacity: 1;
 }
@@ -55,6 +53,7 @@
   font-weight: 500;
   font-size: 20px ;
   padding-top: 10px;
+  margin-top: 10px;
 }
 
 .nav-items .nav-link{
@@ -96,14 +95,14 @@
 /* ===NAVBAR RESPONSIVE=== */
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .navbar {
     height: 80px;
     transition: ease-in-out 0.4s;
   }
 
-  .navbar-brand img{
-    max-height: 100%;
+  .navbar-logo img {
+    max-height: 50px;
   }
 
   .nav-items {
@@ -159,5 +158,3 @@
   
 }
 
-
-@med

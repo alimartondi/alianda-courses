@@ -3,8 +3,9 @@
 
 
 :root{
-  --main-blue: #1373A3;
+  --main-blue: #116E9D;
   --main-light: #FFFFFF;
+  --main-grey: #F5F5F5;
 }
 
 *{
@@ -139,7 +140,7 @@ img{
 body {
   font-family: 'Montserrat', sans-serif !important;
   margin: 0;
-  background-color: #FFF;
+  background-color: var(--main-light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -149,6 +150,10 @@ code {
     monospace;
 }
 
+.btn-info{
+  background-color: var(--main-blue) !important;
+  border-color: var(--main-blue);
+}
 
 .main-title{
   font-size: 28px;

@@ -26,12 +26,13 @@ import Isc1 from "../images/isc1_logo.png";
 export default class PartnerSlider extends Component {
   render() {
     const settings = {
-      dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 5,
       slidesToScroll: 5,
       arrows: false,
+      rows: 2,
+      dots: false,
       autoplay: true,
       responsive: [
         {
@@ -39,35 +40,37 @@ export default class PartnerSlider extends Component {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            variableWidth: true,
+            variableWidth: false,
           },
         },
       ],
     };
 
     return (
-      <Container className="partner-slider">
-        <Row className="partner-items justify-content-center mt-5">
-          <div className="partner-intro ju text-center">
-            <h2 className="second-title">WISH Festival 3.0</h2>
-            <h2 className="subtitle">Organized By</h2>
-          </div>
-          <Col lg={12} className="text-center mt-3">
-            <img src={Isc} alt="" />
-            <img src={Isn} alt="" />
-          </Col>
-        </Row>
-        <Row className="justify-content-center mt-5">
-          <h2 className="subtitle">Partnered With</h2>
-        </Row>
-        <Slider {...settings}>
-          {partnerContents.map((content, i) => (
-            <Col lg={12} className="partner-card mt-3" key={i}>
-              <img src={content.img} alt="" />
+      <section className="partner-area bg-light pt-4 pb-5" id="partner">
+        <Container className="partner-slider">
+          <Row className="partner-items justify-content-center mt-5">
+            <div className="partner-intro ju text-center">
+              <h2 className="second-title">WISH Festival 3.0</h2>
+              <h2 className="subtitle">Organized By</h2>
+            </div>
+            <Col lg={12} className="text-center mt-3">
+              <img src={Isc} alt="ISC Logo" />
+              <img src={Isn} alt="ISN Logo" />
             </Col>
-          ))}
-        </Slider>
-      </Container>
+          </Row>
+          <Row className="justify-content-center mt-5">
+            <h2 className="subtitle">Partnered With</h2>
+          </Row>
+          <Slider {...settings}>
+            {partnerContents.map((content, i) => (
+              <Col lg={12} className="partner-card mt-3" key={i}>
+                <img src={content.img} alt="" />
+              </Col>
+            ))}
+          </Slider>
+        </Container>
+      </section>
     );
   }
 }

@@ -1,15 +1,22 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import Expo from "../images/expo.png";
+import PublicSpeaking from "../images/ngobrolpublic.png";
+import Forumbeasiswa from "../images/forumbeasiswa.png";
+import Supermentor from "../images/supermentor.png";
+import Workshop from "../images/workshop.png";
+import Scholarship from "../images/scholarship.png";
+import Inspiring from "../images/inspiring.png";
 
 export default function ProgramsSection() {
   return (
     <section className="programs-area" id="programs">
       <Container>
         <Row>
-          <Col lg={12} className="text-center mt-5">
-            <h2 className="second-title">Program</h2>
-            <p className="description">
-              10+ Acara Beasiswa di 15 Kota di Indonesia
+          <Col lg={12} className="text-center">
+            <h1 className="second-title mt-5">Program</h1>
+            <p className="description mt-3">
+              10 + Acara Beasiswa di 15 Kota di Indonesia
             </p>
           </Col>
         </Row>
@@ -17,13 +24,9 @@ export default function ProgramsSection() {
           <Col lg={12} className="programs-items d-flex">
             <div className="programs-items-grid">
               {programsContents.map((content, i) => (
-                <div className="events-card mt-5" key={i}>
+                <div className="programs-card mt-5" key={i}>
                   <div className="card-img p-0">
-                    <img
-                      src={content.image}
-                      alt={content.alt}
-                      className="img-fluid"
-                    />
+                    <img src={content.image} alt={content.alt} />
                   </div>
                   <div className="card-body">
                     <p className="description">{content.body}</p>
@@ -40,39 +43,38 @@ export default function ProgramsSection() {
 
 const programsContents = [
   {
-    image:
-      "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1570263200/ckjwuxruhbc75hfwwc6i.png",
-    alt: "Program WISH",
+    image: Inspiring,
+    alt: "WISH inspairing",
     body: "WISH Inspiring Talk",
   },
   {
-    image:
-      "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1570263200/ckjwuxruhbc75hfwwc6i.png",
-    alt: "Program WISH",
-    body: "WISH Inspiring Talk",
+    image: Expo,
+    alt: "Scholarship expo",
+    body: "Education & Scholarship Expo",
   },
   {
-    image:
-      "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1570263200/ckjwuxruhbc75hfwwc6i.png",
-    alt: "Program WISH",
-    body: "WISH Inspiring Talk",
+    image: Forumbeasiswa,
+    alt: "Forum beasiswa",
+    body: "Forum Beasiswa",
   },
   {
-    image:
-      "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1570263200/ckjwuxruhbc75hfwwc6i.png",
-    alt: "Program WISH",
-    body: "WISH Inspiring Talk",
+    image: Scholarship,
+    alt: "Scholarship competition",
+    body: "Scholarship Competition (Program Bantuan Pendidikan SDM Daerah)",
   },
   {
-    image:
-      "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1570263200/ckjwuxruhbc75hfwwc6i.png",
-    alt: "Program WISH",
-    body: "WISH Inspiring Talk",
+    image: PublicSpeaking,
+    alt: "Public speaking",
+    body: "Ngobrol Publil by SMSG (Semua Murid Semua Guru)",
   },
   {
-    image:
-      "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1570263200/ckjwuxruhbc75hfwwc6i.png",
-    alt: "Program WISH",
-    body: "WISH Inspiring Talk",
+    image: Workshop,
+    alt: "Workshop",
+    body: "Education & Scholarship Workshop",
+  },
+  {
+    image: Supermentor,
+    alt: "Supermentor",
+    body: "Scholarship Supermentor",
   },
 ];

@@ -4,6 +4,8 @@ import { Button, Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
 import "../style/style.css";
+import IscLogo from "../images/isc_logo.png";
+import IscMobileLogo from "../images/isc_mobile.png";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -19,9 +21,23 @@ export default function NavBar() {
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-logo">
-            <h5>Our Logo</h5>
+            <img
+              src={IscMobileLogo}
+              alt="Logo ISC"
+              className="img-fluid d-block d-xl-none"
+            />
+            <img
+              src={IscLogo}
+              alt="Logo ISC"
+              className="img-fluid d-none d-xl-block"
+            />
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
+            <div className="sidebar-brand text-center mt-3 d-block d-xl-none">
+              <Link to="/">
+                <img src={IscLogo} alt="sidebar logo" />
+              </Link>
+            </div>
             <Link
               activeClass="active"
               to="wish"
@@ -33,18 +49,6 @@ export default function NavBar() {
               onClick={open}
             >
               Wish 3.0
-            </Link>
-            <Link
-              activeClass="active"
-              to="programs"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="nav-link"
-              onClick={open}
-            >
-              Program
             </Link>
             <Link
               activeClass="active"
@@ -60,6 +64,18 @@ export default function NavBar() {
             </Link>
             <Link
               activeClass="active"
+              to="programs"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="nav-link"
+              onClick={open}
+            >
+              Program
+            </Link>
+            <Link
+              activeClass="active"
               to="footer"
               spy={true}
               smooth={true}
@@ -70,7 +86,7 @@ export default function NavBar() {
             >
               Contact Us
             </Link>
-            <Button variant="warning mt-3 mt-xl-0">Daftar Sekarang!</Button>
+            <Button variant="info mt-5 mt-xl-0 px-4">DAFTAR</Button>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}

@@ -1,9 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import Wish from "../images/wish3.0.png";
 
 export default function WishSection() {
   return (
-    <section className="wish-information mt-5" id="wish">
+    <section className="wish-information mt-5 pb-5" id="wish">
       <Container>
         <Row>
           <Col lg={12} className="text-center mt-5">
@@ -16,21 +17,15 @@ export default function WishSection() {
         </Row>
         <Row className="mt-5 align-items-center">
           <Col lg={6}>
-            <img
-              src="https://risetcdn.jatimtimes.com/images/2019/04/21/Wagub-Jatim-Emil-Elestianto-Dardakd5dd8314d054dc8784da5505cb7c8fb9.md.jpg"
-              alt=""
-              className="img-fluid rounded-lg"
-            />
+            <img src={Wish} alt="" className="img-fluid rounded-lg" />
           </Col>
           <Col lg={6}>
             <p className="description mt-4 mt-xl-0">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam,
-              distinctio porro corrupti sint quasi consequatur velit quibusdam
-              iure eos tenetur. Architecto quo molestiae temporibus cum
-              exercitationem ex praesentium maxime quae, totam minima? Sed
-              commodi, praesentium animi, beatae fuga voluptates et alias
-              inventore doloribus neque, vel molestias necessitatibus quisquam
-              consectetur id?
+              WISH Festival adalah festifal pendidikan dan beasiswa terbesar di
+              Indonesia
+              <br />
+              <br /> Dapatkan kesempatan untuk mengikuti berbagai workshop
+              persiapan beasiswa seperti:
             </p>
           </Col>
         </Row>
