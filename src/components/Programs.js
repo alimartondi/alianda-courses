@@ -11,7 +11,7 @@ import Inspiring from "../images/inspiring.png";
 export default function ProgramsSection() {
   return (
     <section className="programs-area" id="programs">
-      <Container>
+      <Container className="px-xs-0">
         <Row>
           <Col lg={12} className="text-center">
             <h1 className="second-title mt-5">Program</h1>
