@@ -47,7 +47,7 @@ export default class PartnerSlider extends Component {
     };
 
     return (
-      <section className="partner-area bg-light pt-4 pb-5" id="partner">
+      <section className="partner-area bg-light pt-4" id="partner">
         <Container className="partner-slider">
           <Row className="partner-items justify-content-center mt-5">
             <div className="partner-intro ju text-center">
@@ -56,7 +56,7 @@ export default class PartnerSlider extends Component {
             </div>
             <Col lg={12} className="text-center mt-3">
               <img src={Isc} alt="ISC Logo" />
-              <img src={Isn} alt="ISN Logo" />
+              <img src={Isn} alt="ISN Logo" className="mt-3 mt-md-0" />
             </Col>
           </Row>
           <Row className="justify-content-center mt-5">

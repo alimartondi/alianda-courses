@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-// import { fab } from "@fortawesome/free-brands-svg-icons";
+import IscLogo from "../images/isc_logo.png";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Footer() {
@@ -12,7 +12,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Col lg={12} className="footer-items text-center">
-            <h2>Our Logo</h2>
+            <img src={IscLogo} alt="ISC logo" />
             <div className="social-media d-flex justify-content-center mt-3">
               <a href="/" className="footer-social-media">
                 <FontAwesomeIcon icon={faInstagram} />

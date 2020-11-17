@@ -5,7 +5,7 @@ import "../style/style.css";
 
 export default function RegisterSection() {
   return (
-    <section className="register-area mt-5" id="register">
+    <section className="register-area" id="register">
       <Container>
         <Row className="justify-content-end">
           <Col lg={9}>

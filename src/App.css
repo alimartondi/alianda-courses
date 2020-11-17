@@ -160,6 +160,7 @@ code {
 }
 .btn-outline-info:hover{
   background-color: var(--main-blue) !important;
+  color: #FFFFFF !important;
 }
 
 .main-title{

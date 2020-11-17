@@ -77,8 +77,10 @@ export default function NavBar() {
             >
               Contact Us
             </Link>
-            <Button variant="info mt-5 mt-xl-0 px-4">DAFTAR</Button>
-            <Button variant="outline-info mt-2 mt-xl-0 px-4">VOLUNTER</Button>
+            <Button variant="info mt-5 mt-xl-0">Registrasi Peserta</Button>
+            <Button variant="outline-info mt-2 mt-xl-0">
+              Daftar Volunteer
+            </Button>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}

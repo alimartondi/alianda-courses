@@ -16,7 +16,7 @@
   }
 
   .banner-content .main-title{
-    margin-top: 200px;
+    margin-top: 160px;
   }
 
   .full-banner img{
@@ -27,7 +27,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    height: 650px;
+    height: 590px;
     max-width: unset;
   }
 
@@ -36,7 +36,6 @@
     width: 80%;
   }
   
-
   .slick-dots{
     bottom: 30px !important;
   }
@@ -115,7 +114,7 @@
   .footer-link a{
       cursor: pointer;
       color: var(--main-light);
-      padding: 1rem;
+      padding: 0.6rem;
   }
   
   .footer-link a:hover,
@@ -149,16 +148,37 @@
 
 
   /* ===Partner=== */
+  .partner-area{
+    padding-bottom: 100px;
+  }
   .partner-card{
     background-color: transparent;
     height: 100px;
     padding-right: 1rem;
   }
-
+  .partner-card{
+    background-color: #fff;
+    border-radius: 5px;
+    height: 100px;
+    padding-top: 20px;
+    padding-right: 1rem;
+    text-align: center;
+    -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.2);
+    box-shadow: 0 1px 4px rgba(34,25,25,0.2);
+    -webkit-box-shadow: 0 1px 4px rgba(34,25,25,0.2);
+  }
   
-
+  .partner-card img{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  
+.slick-slider .slick-list{
+  padding-left: 1px;
+}
   .partner-slider .slick-slide{
-    padding-right: 0.5rem;
+    padding-right: 0.6rem;
   }
   /* ===End of Partner=== */
 
@@ -169,7 +189,8 @@
     padding-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -80px;
+    margin-top: -50px;
+    margin-bottom: -60px;
     position: relative;
     z-index: 2;
     background-color: var(--main-light);
@@ -214,7 +235,7 @@
   .programs-items-grid,
   .events-items-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 2rem;
     margin-bottom: 2.5rem;
     }
@@ -245,6 +266,7 @@
       box-shadow: 0 1px 4px rgba(34,25,25,0.2);
       -webkit-box-shadow: 0 1px 4px rgba(34,25,25,0.2);
     }
+
     .partner-card img{
       margin: auto;
       margin-top: 1rem;
@@ -254,6 +276,11 @@
     }
     .partner-slider .slick-list{
       padding: 20px 1px;
+    }
+
+
+    .footer-link a{
+      padding: 1rem;
     }
   
   }

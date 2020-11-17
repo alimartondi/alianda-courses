@@ -7,7 +7,7 @@ export default function WishSection() {
     <section className="wish-information mt-5 pb-5" id="wish">
       <Container>
         <Row>
-          <Col lg={12} className="text-center mt-5">
+          <Col lg={12} className="text-center mt-3">
             <h2 className="second-title">Apa itu WISH</h2>
             <p className="description">
               Mewujudkan pemerataan informasi dan kesempatan beasiswa bagi
@@ -15,17 +15,29 @@ export default function WishSection() {
             </p>
           </Col>
         </Row>
-        <Row className="mt-5 align-items-center">
+        <Row className="mt-3 align-items-center">
           <Col lg={6}>
-            <img src={Wish} alt="" className="img-fluid rounded-lg" />
+            <img src={Wish} alt="WISH logo" className="img-fluid rounded-lg" />
           </Col>
           <Col lg={6}>
-            <p className="description mt-4 mt-xl-0">
-              WISH Festival adalah festifal pendidikan dan beasiswa terbesar di
+            <p
+              className="description mt-4 mt-xl-0"
+              style={{ whiteSpace: "pre-line" }}
+            >
+              WISH Festival adalah festival pendidikan dan beasiswa terbesar di
               Indonesia
               <br />
               <br /> Dapatkan kesempatan untuk mengikuti berbagai workshop
               persiapan beasiswa seperti:
+              <br />
+              <br /> - Pelatihan Bahasa Inggris Gratis
+              <br />- IELTS, TOEFL, TOEIC Coaching Clinik
+              <br /> - IELTS &amp; TOEFL Prediction Test
+              <br /> - Tes Potensi Akademik (TPA) by tesbeasiswa.com
+              <br /> - Tes Kemampuan Bahasa Inggris by Schoters
+              <br /> - Tryout OSC (Online Scholarship Competition) medcom
+              <br /> - Pelatihan Softskill by XL Future Leaders
+              <br /> - Pelatihan dan Bimbingan Persiapan Beasiswa by Schoters
             </p>
           </Col>
         </Row>

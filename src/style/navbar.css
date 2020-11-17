@@ -114,13 +114,18 @@
     position: relative;
     left: 0;
     height: 100%;
-    width: 55%;
+    width: 60%;
     justify-content: space-between;
     padding: 0;
   }
 
   .nav-items.active {
     display: none;
+  }
+
+  .nav-items .btn-info,
+  .nav-items .btn-outline-info{
+    font-size: 15px;
   }
 
   .nav-link {
@@ -152,8 +157,7 @@
   }
 
   .burger_hamburger__21cuQ,
-  .nav-items .sidebar-brand,
-  .nav-items hr {
+  .nav-items .sidebar-brand{
     display: none !important;
   }
   

@@ -23,7 +23,7 @@ export default function EventsSection() {
     <section className="events-area bg-light" id="events">
       <Container>
         <Row>
-          <Col lg={12} className="text-center mt-5">
+          <Col lg={12} className="text-center mt-3">
             <h2 className="second-title">Events</h2>
             <p className="description">Roadshow 15 Kota di Indonesia</p>
           </Col>
