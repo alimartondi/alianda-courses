@@ -21,7 +21,7 @@ import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 export default function EventsSection() {
   return (
     // <section className="events-area bg-light" id="events">
-    <Container className="events-area">
+    <Container className="events-area" id="events">
       <Row>
         <Col lg={12} className="text-center mt-3">
           <h2 className="second-title">Events</h2>

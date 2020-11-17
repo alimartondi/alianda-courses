@@ -10,36 +10,36 @@ import Inspiring from "../images/inspiring.png";
 
 export default function ProgramsSection() {
   return (
-    <section className="programs-area" id="programs">
-      <Container>
-        <Row>
-          <Col lg={12} className="text-center">
-            <h1 className="second-title mt-5">Program</h1>
-            <p className="description mt-3">
-              10 + Acara Beasiswa di 15 Kota di Indonesia
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg={12} className="px-0 mx-0">
-            <div className="programs-items px-3">
-              <div className="programs-items-grid">
-                {programsContents.map((content, i) => (
-                  <div className="programs-card mt-4" key={i}>
-                    <Card.Img
-                      className="p-0 rounded-0"
-                      src={content.image}
-                      alt={content.alt}
-                    />
-                    <Card.Body>{content.body}</Card.Body>
-                  </div>
-                ))}
-              </div>
+    // <section id="programs">
+    <Container className="programs-area">
+      <Row>
+        <Col lg={12} className="text-center">
+          <h1 className="second-title mt-5">Program</h1>
+          <p className="description mt-3">
+            10 + Acara Beasiswa di 15 Kota di Indonesia
+          </p>
+        </Col>
+      </Row>
+      <Row>
+        <Col lg={12}>
+          <div className="programs-items">
+            <div className="programs-items-grid">
+              {programsContents.map((content, i) => (
+                <div className="programs-card mt-4" key={i}>
+                  <Card.Img
+                    className="p-0 rounded-0"
+                    src={content.image}
+                    alt={content.alt}
+                  />
+                  <Card.Body>{content.body}</Card.Body>
+                </div>
+              ))}
             </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+          </div>
+        </Col>
+      </Row>
+    </Container>
+    // </section>
   );
 }
 

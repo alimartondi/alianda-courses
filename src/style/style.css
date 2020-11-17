@@ -50,6 +50,7 @@
   /* ===End of Banner=== */
   
   /* ===Events & Programs=== */
+  .programs-area.container,
   .events-area.container{
     position: relative;
     overflow: hidden;
@@ -62,6 +63,7 @@
   .events-items{
     position: relative;
     z-index: 9;
+    padding-left: 1rem;
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -232,6 +234,9 @@
     width: 100%;
   }
   
+
+  
+
   .programs-card,
     .events-card{
       width: 97%;
@@ -292,6 +297,20 @@
   @media (min-width:900px) and (max-width:1024px) {
     .banner-content {
       margin-left: 3rem;
+    }
+  }
+
+  @media (min-width:768px){
+    .programs-area.container,
+    .events-area.container{
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    .programs-items, .events-items{
+      padding-left: 0;
     }
   }
   
