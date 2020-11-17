@@ -300,7 +300,7 @@
     }
   }
 
-  @media (min-width:768px){
+  @media (min-width:578px){
     .programs-area.container,
     .events-area.container{
       padding-right: 15px;
