@@ -84,7 +84,7 @@
   .card-img{
     width: auto !important;
   }
-  
+
   .card-body, .card-header, .card-footer{
     padding: 0.5rem 1rem !important;
     background-color: var(--main-light) !important;

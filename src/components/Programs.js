@@ -20,7 +20,7 @@ export default function ProgramsSection() {
             </p>
           </Col>
         </Row>
-        <Row className="px-0">
+        <Row>
           <Col lg={12}>
             <div className="programs-items">
               <div className="programs-items-grid">
