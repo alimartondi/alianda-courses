@@ -29,22 +29,24 @@ export default function EventsSection() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12} className="events-items d-flex">
-            <div className="events-items-grid">
-              {eventsContents.map((content, i) => (
-                <div className="events-card mt-4" key={i}>
-                  <Card.Header className="card-header">
-                    <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
-                    Postponed
-                  </Card.Header>
-                  <div className="card-img p-0">
-                    <img src={content.image} alt={content.alt} />
+          <Col lg={12} className="mx-0 px-0">
+            <div className="events-items px-3">
+              <div className="events-items-grid">
+                {eventsContents.map((content, i) => (
+                  <div className="events-card mt-4" key={i}>
+                    <Card.Header className="card-header">
+                      <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+                      Postponed
+                    </Card.Header>
+                    <div className="card-img p-0">
+                      <img src={content.image} alt={content.alt} />
+                    </div>
+                    <Card.Body className="card-body">
+                      <p className="description">{content.body}</p>
+                    </Card.Body>
                   </div>
-                  <Card.Body className="card-body">
-                    <p className="description">{content.body}</p>
-                  </Card.Body>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </Col>
         </Row>

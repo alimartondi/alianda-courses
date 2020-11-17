@@ -21,8 +21,8 @@ export default function ProgramsSection() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12}>
-            <div className="programs-items">
+          <Col lg={12} className="px-0 mx-0">
+            <div className="programs-items px-3">
               <div className="programs-items-grid">
                 {programsContents.map((content, i) => (
                   <div className="programs-card mt-4" key={i}>
