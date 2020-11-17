@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Card, Row, Col, Container } from "react-bootstrap";
 import RoadShow1 from "../images/roadshow_1.png";
 import RoadShow2 from "../images/roadshow_2.png";
 import RoadShow3 from "../images/roadshow_3.png";
@@ -15,6 +15,8 @@ import RoadShow12 from "../images/roadshow_12.png";
 import RoadShow13 from "../images/roadshow_13.png";
 import RoadShow14 from "../images/roadshow_14.png";
 import RoadShow15 from "../images/roadshow_15.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 
 export default function EventsSection() {
   return (
@@ -30,13 +32,17 @@ export default function EventsSection() {
           <Col lg={12} className="events-items d-flex">
             <div className="events-items-grid">
               {eventsContents.map((content, i) => (
-                <div className="events-card mt-5" key={i}>
+                <div className="events-card mt-4" key={i}>
+                  <Card.Header className="card-header">
+                    <FontAwesomeIcon icon={faCalendarAlt} className="mr-2" />
+                    Postponed
+                  </Card.Header>
                   <div className="card-img p-0">
                     <img src={content.image} alt={content.alt} />
                   </div>
-                  <div className="card-body">
+                  <Card.Body className="card-body">
                     <p className="description">{content.body}</p>
-                  </div>
+                  </Card.Body>
                 </div>
               ))}
             </div>

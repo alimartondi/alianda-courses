@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import Expo from "../images/expo.png";
 import PublicSpeaking from "../images/ngobrolpublic.png";
 import Forumbeasiswa from "../images/forumbeasiswa.png";
@@ -24,13 +24,13 @@ export default function ProgramsSection() {
           <Col lg={12} className="programs-items d-flex">
             <div className="programs-items-grid">
               {programsContents.map((content, i) => (
-                <div className="programs-card mt-5" key={i}>
-                  <div className="card-img p-0">
-                    <img src={content.image} alt={content.alt} />
-                  </div>
-                  <div className="card-body">
-                    <p className="description">{content.body}</p>
-                  </div>
+                <div className="programs-card mt-4" key={i}>
+                  <Card.Img
+                    className="p-0 rounded-0"
+                    src={content.image}
+                    alt={content.alt}
+                  />
+                  <Card.Body>{content.body}</Card.Body>
                 </div>
               ))}
             </div>

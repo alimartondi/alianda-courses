@@ -152,7 +152,13 @@ code {
 
 .btn-info{
   background-color: var(--main-blue) !important;
-  border-color: var(--main-blue);
+  border-color: var(--main-blue) !important;
+}
+.btn-outline-info{
+  border-color: var(--main-blue) !important;
+}
+.btn-outline-info:hover{
+  background-color: var(--main-blue) !important;
 }
 
 .main-title{

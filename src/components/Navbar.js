@@ -21,16 +21,7 @@ export default function NavBar() {
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-logo">
-            <img
-              src={IscMobileLogo}
-              alt="Logo ISC"
-              className="img-fluid d-block d-xl-none"
-            />
-            <img
-              src={IscLogo}
-              alt="Logo ISC"
-              className="img-fluid d-none d-xl-block"
-            />
+            <img src={IscLogo} alt="Logo ISC" className="img-fluid" />
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
             <div className="sidebar-brand text-center mt-3 d-block d-xl-none">
@@ -87,6 +78,7 @@ export default function NavBar() {
               Contact Us
             </Link>
             <Button variant="info mt-5 mt-xl-0 px-4">DAFTAR</Button>
+            <Button variant="outline-info mt-2 mt-xl-0 px-4">VOLUNTER</Button>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}
