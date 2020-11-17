@@ -20,7 +20,7 @@ export default function ProgramsSection() {
             </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="px-0">
           <Col lg={12} className="programs-items d-flex">
             <div className="programs-items-grid">
               {programsContents.map((content, i) => (
