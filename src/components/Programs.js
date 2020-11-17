@@ -11,7 +11,7 @@ import Inspiring from "../images/inspiring.png";
 export default function ProgramsSection() {
   return (
     <section className="programs-area" id="programs">
-      <Container className="px-xs-0">
+      <Container>
         <Row>
           <Col lg={12} className="text-center">
             <h1 className="second-title mt-5">Program</h1>
@@ -21,18 +21,20 @@ export default function ProgramsSection() {
           </Col>
         </Row>
         <Row className="px-0">
-          <Col lg={12} className="programs-items d-flex">
-            <div className="programs-items-grid">
-              {programsContents.map((content, i) => (
-                <div className="programs-card mt-4" key={i}>
-                  <Card.Img
-                    className="p-0 rounded-0"
-                    src={content.image}
-                    alt={content.alt}
-                  />
-                  <Card.Body>{content.body}</Card.Body>
-                </div>
-              ))}
+          <Col lg={12}>
+            <div className="programs-items">
+              <div className="programs-items-grid">
+                {programsContents.map((content, i) => (
+                  <div className="programs-card mt-4" key={i}>
+                    <Card.Img
+                      className="p-0 rounded-0"
+                      src={content.image}
+                      alt={content.alt}
+                    />
+                    <Card.Body>{content.body}</Card.Body>
+                  </div>
+                ))}
+              </div>
             </div>
           </Col>
         </Row>
