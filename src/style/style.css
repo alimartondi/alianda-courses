@@ -51,6 +51,7 @@
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
   }
+
   .programs-items-grid,
   .events-items-grid{
     display: -webkit-box;
@@ -65,20 +66,25 @@
     float: left;
     margin-bottom: 2rem;
   }
+
  .programs-card, 
   .events-card{
+    display: inline-block;
     max-width: 240px;
-    margin-right: 1rem;
+    margin-right: 1.2rem;
     border-radius: 0.3rem;
     overflow: hidden;
+    overflow-x: auto;
     background-color: var(--main-light);
     -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.2);
     box-shadow: 0 1px 4px rgba(34,25,25,0.2);
     -webkit-box-shadow: 0 1px 4px rgba(34,25,25,0.2);
   }
+
   .card-img{
     width: auto !important;
   }
+  
   .card-body, .card-header, .card-footer{
     padding: 0.5rem 1rem !important;
     background-color: var(--main-light) !important;
