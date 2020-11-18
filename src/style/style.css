@@ -140,11 +140,32 @@
   margin-bottom: -60px;
   position: relative;
   z-index: 10;
-  background-color: var(--main-light);
+  overflow: hidden;
+  background-color: rgb(239, 239, 239);
   border-radius: 10px;
   -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.2);
   box-shadow: 0 1px 4px rgba(34,25,25,0.2);
   -webkit-box-shadow: 0 1px 4px rgba(34,25,25,0.2);
+}
+
+.register-body .second-title,
+.register-body .subtitle{
+  max-width: 32rem;
+}
+
+.register-card::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/shape-2.png);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+
 }
 /*===End of Register=== */
 
