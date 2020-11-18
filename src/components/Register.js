@@ -5,12 +5,12 @@ import "../style/style.css";
 
 export default function RegisterSection() {
   return (
-    <section className="register-area" id="register">
+    <section className="register-area mt-md-5" id="register">
       <Container>
-        <Row className="justify-content-end">
-          <Col lg={9}>
-            <div className="register-card d-block d-md-flex align-items-center">
-              <div className="register-body text-center text-md-right mr-0 mr-xl-5 mt-5">
+        <Row>
+          <Col lg={12}>
+            <div className="register-card d-block d-md-flex align-items-center ">
+              <div className="register-body text-center  mr-0 mr-xl-5 mt-5">
                 <h3 className="second-title">
                   Daftar Gratis untuk Ikuti Semua Program WISH!
                 </h3>

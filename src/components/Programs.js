@@ -11,11 +11,11 @@ import Inspiring from "../images/inspiring.png";
 export default function ProgramsSection() {
   return (
     // <section id="programs">
-    <Container className="programs-area">
+    <Container className="programs-area" id="programs">
       <Row>
         <Col lg={12} className="text-center">
           <h1 className="second-title mt-5">Program</h1>
-          <p className="description mt-3">
+          <p className="subtitle mt-3">
             10 + Acara Beasiswa di 15 Kota di Indonesia
           </p>
         </Col>

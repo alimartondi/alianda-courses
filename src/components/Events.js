@@ -25,7 +25,7 @@ export default function EventsSection() {
       <Row>
         <Col lg={12} className="text-center mt-3">
           <h2 className="second-title">Events</h2>
-          <p className="description">Roadshow 15 Kota di Indonesia</p>
+          <p className="subtitle">Roadshow 15 Kota di Indonesia</p>
         </Col>
       </Row>
       <Row>

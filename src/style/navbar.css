@@ -1,3 +1,5 @@
+/* ===NAVBAR=== */
+
 .navbar {
   z-index: 999;
   padding: 0;
@@ -64,11 +66,11 @@
   padding: 0;
 }
 
-
 /* ==Humberger Menu Icon== */
 .burger_hamburger--slider__3_wqL .burger_hamburger-inner__14XT2:before{
   top: 8px !important;
 }
+
 .burger_hamburger--slider__3_wqL .burger_hamburger-inner__14XT2:after{
   top:16px !important;
 }
@@ -93,8 +95,8 @@
 
 /* ==End of Humberger Menu Icon== */
 
-/* ===NAVBAR RESPONSIVE=== */
 
+/* ===NAVBAR RESPONSIVE=== */
 
 @media (min-width: 1200px) {
   .navbar {
@@ -141,7 +143,6 @@
 
   .nav-link.active,
   .nav-link:active {
-    font-weight: 500;
     color: var(--main-blue);
   }
 

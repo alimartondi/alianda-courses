@@ -13,7 +13,7 @@ export default class SlickSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      autoplay: true,
+      autoplay: false,
       pauseOnHover: false,
     };
     return (
@@ -46,11 +46,11 @@ function SlideSlider(props) {
         <div className="banner-content mt-5">
           <h1 className="main-title">{props.title}</h1>
           <h5 className="subtitle mt-3">{props.intro}</h5>
-          <div className="banner-logos d-block d-md-flex justify-content-center justify-content-md-start mt-5">
+          <div className="banner-logos d-block d-md-flex mt-5">
             <div className="wish-lokalate">
               <Button variant="light px-3">{props.button}</Button>
             </div>
-            <div className="wish-online ml-xl-2">
+            <div className="wish-online ml-md-2">
               <Button variant="outline-light px-3 mt-3 mt-md-0">
                 {props.button2}
               </Button>

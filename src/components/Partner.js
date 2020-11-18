@@ -56,7 +56,7 @@ export default class PartnerSlider extends Component {
             </div>
             <Col lg={12} className="text-center mt-3">
               <img src={Isc} alt="ISC Logo" />
-              <img src={Isn} alt="ISN Logo" className="mt-3 mt-md-0" />
+              <img src={Isn} alt="ISN Logo" className="mt-3 ml-md-5 mt-md-0" />
             </Col>
           </Row>
           <Row className="justify-content-center mt-5">
