@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { Button, Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
 import "../style/style.css";
 import IscLogo from "../images/isc_logo.png";
-import IscMobileLogo from "../images/isc_mobile.png";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -16,17 +15,26 @@ export default function NavBar() {
 
   const isOnTop = useScrollHandler();
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <header className="header-area" id="header">
       <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
         <Container>
           <div className="navbar-logo">
-            <img src={IscLogo} alt="Logo ISC" className="img-fluid" />
+            <img
+              src={IscLogo}
+              alt="Logo ISC"
+              className="img-fluid"
+              onClick={scrollToTop}
+            />
           </div>
           <div className={state.active ? "nav-items active" : "nav-items"}>
             <div className="sidebar-brand text-center mt-3 d-block d-xl-none">
-              <Link to="/">
-                <img src={IscLogo} alt="sidebar logo" />
+              <Link to="banner" smooth={true}>
+                <img src={IscLogo} alt="sidebar logo" onClick={open} />
               </Link>
             </div>
             <Link

@@ -12,10 +12,6 @@ export default function Footer() {
       <Container>
         <Row>
           <Col lg={12} className="text-center">
-            <div className="footer-background pt-5">
-              <img src={LandMark} alt="ISC logo" className="img-fluid" />
-            </div>
-
             <div className="footer-items">
               <div className="social-media d-flex justify-content-center mt-3">
                 <a href="/" className="footer-social-media">
