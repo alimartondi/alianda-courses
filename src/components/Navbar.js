@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Button, Container } from "react-bootstrap";
 import Burger from "react-css-burger";
 import "../style/navbar.css";
 import "../style/style.css";
 import IscLogo from "../images/isc_logo.png";
+import Headroom from "react-headroom";
 
 export default function NavBar() {
   const [state, setState] = useState({
@@ -13,15 +14,13 @@ export default function NavBar() {
 
   const open = () => setState(!open);
 
-  const isOnTop = useScrollHandler();
-
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
   return (
-    <header className="header-area" id="header">
-      <nav className={`navbar ${isOnTop ? "" : "scrolled"}`}>
+    <Headroom className="header-area" id="header">
+      <nav className="navbar">
         <Container>
           <div className="navbar-logo">
             <img
@@ -47,7 +46,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={open}
             >
-              Wish 3.0
+              WISH 3.0
             </Link>
             <Link
               activeClass="active"
@@ -59,7 +58,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={open}
             >
-              Event
+              EVENT
             </Link>
             <Link
               activeClass="active"
@@ -71,7 +70,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={open}
             >
-              Program
+              PROGRAM
             </Link>
             <Link
               activeClass="active"
@@ -83,12 +82,16 @@ export default function NavBar() {
               className="nav-link"
               onClick={open}
             >
-              Contact Us
+              CONTACT US
             </Link>
-            <Button variant="info mt-5 mt-xl-0">Registrasi Peserta</Button>
-            <Button variant="outline-info mt-2 mt-xl-0">
-              Daftar Volunteer
-            </Button>
+            <div className="nav-button">
+              <Button variant="info mt-5 mt-xl-0 mr-0 mr-xl-2">
+                Registrasi Peserta
+              </Button>
+              <Button variant="outline-info mt-2 mt-xl-0">
+                Daftar Volunteer
+              </Button>
+            </div>
           </div>
           <Burger
             onClick={() => setState({ active: !state.active })}
@@ -104,25 +107,6 @@ export default function NavBar() {
           ></Burger>
         </Container>
       </nav>
-    </header>
+    </Headroom>
   );
 }
-
-const useScrollHandler = () => {
-  const [scroll, setScroll] = useState(true);
-
-  useEffect(() => {
-    const onScroll = () => {
-      const scrollCheck = window.scrollY < 2;
-      if (scrollCheck !== scroll) {
-        setScroll(scrollCheck);
-      }
-    };
-    document.addEventListener("scroll", onScroll);
-    return () => {
-      document.removeEventListener("scroll", onScroll);
-    };
-  }, [scroll, setScroll]);
-
-  return scroll;
-};

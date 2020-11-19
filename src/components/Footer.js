@@ -13,6 +13,7 @@ export default function Footer() {
         <Row>
           <Col lg={12} className="text-center">
             <div className="footer-items">
+              <h2 className="second-title">Contact Us</h2>
               <div className="social-media d-flex justify-content-center mt-3">
                 <a href="/" className="footer-social-media">
                   <FontAwesomeIcon icon={faInstagram} />
@@ -23,20 +24,6 @@ export default function Footer() {
                 <a href="/" className="footer-social-media ml-4">
                   <FontAwesomeIcon icon={faPhone} />
                 </a>
-              </div>
-              <div className="footer-link mt-3 ">
-                <Link to="banner" spy={true} smooth={true} activeClass="none">
-                  Home
-                </Link>
-                <Link to="wish" spy={true} smooth={true} offset={-60}>
-                  Wish 3.0
-                </Link>
-                <Link to="programs" spy={true} smooth={true} offset={-30}>
-                  Program
-                </Link>
-                <Link to="events" spy={true} smooth={true} offset={-60}>
-                  Events
-                </Link>
               </div>
               <hr />
               <h5 className="copyright-intro text-center text-xl-left">
