@@ -1,23 +1,13 @@
 import "./App.css";
-import NavBar from "./components/Navbar";
-import BannerSection from "./components/Banner";
-import EventsSection from "./components/Events";
-import WishSection from "./components/Wish";
-import ProgramsSection from "./components/Programs";
-import Footer from "./components/Footer";
-import RegisterSection from "./components/Register";
-import PartnerSlider from "./components/Partner";
+import Header from "./section/Header";
+import Main from "./section/Main";
+import Footer from "./section/Footer";
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <BannerSection />
-      <WishSection />
-      <EventsSection />
-      <ProgramsSection />
-      <PartnerSlider />
-      <RegisterSection />
+      <Header />
+      <Main />
       <Footer />
     </div>
   );

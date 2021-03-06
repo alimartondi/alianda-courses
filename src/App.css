@@ -1,18 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
 :root{
   --main-blue: #116E9D;
   --main-light: #FFFFFF;
   --main-grey: #F5F5F5;
+  --main-dark: #040404;
+  --main-gradient:linear-gradient(81.26deg, #2073A2 30.08%, #1797DF 75.5%);
 }
-
-*{
-  margin: 0;
-  padding: 0;
-}
-
 
 * {
   box-sizing: border-box;
@@ -23,6 +17,7 @@
 a,
 a:hover {
   text-decoration: none !important;
+  color: #CDCDCD;
 }
 
 
@@ -40,7 +35,7 @@ li {
 }
 img{
   -webkit-user-drag: none;
-  -moz-user-select: none;
+  -moz-user-drag: none;
 }
 
 .col,
@@ -138,11 +133,14 @@ img{
 
 
 body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   margin: 0;
   background-color: var(--main-light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 2000px;
+  margin: 0;
+  padding: 0;
 }
 
 code {
@@ -150,35 +148,55 @@ code {
     monospace;
 }
 
-.btn-info{
-  background-color: var(--main-blue) !important;
-  border-color: var(--main-blue) !important;
-}
-.btn-outline-info{
+.btn-light{
   color: var(--main-blue) !important;
-  border-color: var(--main-blue) !important;
-}
-.btn-outline-info:hover{
-  background-color: var(--main-blue) !important;
-  color: #FFFFFF !important;
+  font-weight: 500 !important;
 }
 
-.main-title{
-  font-size: 28px;
+.mainHero-title{
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.30;
+  color: var(--main-light);
 }
-.second-title{
-  font-size: 20px;
+
+.mainHero-text{
+  font-weight: lighter;
+  color: var(--main-light);
 }
-.subtitle{
-  font-size: 15px;
+.secondHero-title{
+  color:var(--main-dark);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.secondHero-text{
+  color: var(--main-blue);
+  font-size: 1.1rem;
   font-weight: normal;
   letter-spacing: normal;
+  margin-bottom: 0;
+}
+
+.description{
+  font-size: 0.9rem;
+}
+
+.mainCard-title{
+  font-size: 1rem;
+  color: var(--main-dark);
+  font-weight: 500;
+  margin: 0;
+}
+.mainCard-text{
+  font-size: 0.8rem;
+  color: #888888;
+  font-weight: 300;
 }
 
 
 
 @media (min-width:768px){
-  .main-title{
+  .mainHero-title{
     font-size: 40px;
   }
   .second-title{
