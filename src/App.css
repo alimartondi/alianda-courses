@@ -148,9 +148,29 @@ code {
     monospace;
 }
 
-.btn-light{
-  color: var(--main-blue) !important;
-  font-weight: 500 !important;
+
+/* ===Main Button=== */
+.main-button.btn-light{
+  background-color: #FFF;
+  color: var(--main-blue);
+}
+.main-button.btn-light:hover{
+  background-color: transparent;
+  color: #FFF;
+}
+.main-button.btn-light:focus,
+.main-button.btn-light:active{
+  border-color: #FFF;
+  background-color: transparent;
+  color: #FFF;
+}
+
+/* ===Second Button=== */
+.second-button.btn-outline-light{
+  background-color: transparent;
+}
+.second-button.btn-outline-light:hover{
+  color: var(--main-blue);
 }
 
 .mainHero-title{

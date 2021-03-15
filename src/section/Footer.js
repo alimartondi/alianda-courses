@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="footerBrand">
               <img src={FooterBrand} alt="footer-brand" />
             </div>
-            <Form action className=" d-none d-md-flex mt-5">
+            <Form className=" d-none d-md-flex mt-5">
               <Form.Control
                 type="text"
                 placeholder="Enter your email"

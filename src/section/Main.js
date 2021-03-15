@@ -4,6 +4,8 @@ import Advantages from "../components/Advant";
 import Feautured from "../components/Feautured";
 import Hero from "../components/Hero";
 import PricingPlans from "../components/Price";
+import Faq from "../components/Question";
+import RegisterSection from "../components/Register";
 import Teams from "../components/Team";
 import Testimonial from "../components/Testimonial";
 
@@ -16,7 +18,9 @@ export default function Main() {
       <Feautured />
       <PricingPlans />
       <Testimonial />
-      {/* <Teams /> */}
+      <Teams />
+      <Faq />
+      {/* <RegisterSection /> */}
     </div>
   );
 }

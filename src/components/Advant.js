@@ -12,7 +12,7 @@ export default function Advantages() {
         <Row className="justify-content-center">
           <Col lg={7} className="text-center">
             <p className="secondHero-text mt-5">Start Now</p>
-            <h1 class="secondHero-title">Why should you choose us?</h1>
+            <h1 className="secondHero-title">Why should you choose us?</h1>
             <p className="mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
               corporis dolores labore? Unde, quaerat deleniti.

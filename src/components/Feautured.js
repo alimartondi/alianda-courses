@@ -11,7 +11,7 @@ export default function ProgramsSection() {
         <Row className="justify-content-center">
           <Col lg={7} className="text-center">
             <p className="secondHero-text mt-5">Find a courses</p>
-            <h2 class="secondHero-title">Feautured Courses</h2>
+            <h2 className="secondHero-title">Feautured Courses</h2>
             <p className="mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
               corporis dolores labore? Unde, quaerat deleniti.
@@ -24,7 +24,7 @@ export default function ProgramsSection() {
               <div className="feauturedItems-grid d-block d-md-flex justify-content-between">
                 {feauturedContents.map((content, i) => (
                   <Card
-                    className="feauturedItems-card text-center mt-5 shadow-sm pb-4"
+                    className="feauturedItems-card text-center mt-5 pb-4 border-0"
                     key={i}
                   >
                     <div className="feauturedItems-img">

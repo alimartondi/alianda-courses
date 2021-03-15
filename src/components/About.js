@@ -11,7 +11,7 @@ export default function About() {
         <Row className="justify-content-center">
           <Col lg={7} className="text-center mt-3">
             <p className="secondHero-text mt-5">About Us</p>
-            <h1 class="secondHero-title">Do you know about us?</h1>
+            <h1 className="secondHero-title">Do you know about us?</h1>
             <p className="mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
               corporis dolores labore? Unde, quaerat deleniti.

@@ -30,54 +30,51 @@
 
 
 /* ===Advantages=== */
-.advantItems{
+.advantItems,
+.pricingPlans-items{
   position: relative;
-  padding-left: 1rem;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+  padding-left: 1rem;
 }
 
-.advantItems-grid{
-  display: grid;
+.advantItems-grid,
+.pricingPlans-grid{
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row;
   box-sizing: border-box;
-  padding: 5px;
   float: left;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
   position: relative;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
-.advantItems-card{
-  padding: 2rem 0;
+.advantItems-card,
+.pricingPlans-card{
   text-align: center;
   display: inline-block;
-  /* max-width: 240px; */
-  margin-right: 1.2rem;
-  border-radius: 0.5rem;
   overflow-x: auto;
+  padding-top: 1.2rem;
+  margin-right: 1.8rem;
+  border-radius: 0.3rem;
+  width: 280px;
   background-color: var(--main-light);
-  transition: all 0.1s ease-in-out;
+  border: none;
+  box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
   
 }
-.advantItems-card:hover{
+/* .advantItems-card:hover{
   cursor: pointer;
   box-shadow: 0px 9px 60px rgba(0, 0, 0, 0.1);
   -moz-box-shadow:0px 9px 60px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow:0px 9px 60px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-
+} */
 
 
 .advantItems-img img{
@@ -101,6 +98,7 @@
   max-width: 330px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
 }
 
 
@@ -109,9 +107,6 @@
 .pricingPlans-card{
   text-align: center;
   padding: 2rem 1rem;
-  background: rgba(255, 255, 255, 0.94);
-  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.12);
-  border-radius: 15px;
 }
 
 
@@ -177,66 +172,34 @@
   right: 0 !important;
 }
 
-
-
-
-.banner-area{
-  padding-top:0;
+/* ===FAQ=== */
+.faq-card{
+  background-color: #fff;
+  transition: all 0.5ms ease-in;
+  cursor: pointer;
+  
 }
-
-.banner-content{
-  position: absolute;
-  text-align: center;
+.faq-card:hover{
+  background: var(--main-gradient);
   color: #fff;
-  top: 0;
-  left: 0;
-  right: 0;
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
-.banner-content .main-title{
-  margin-top: 160px;
+.faq-card .card-body{
+  transition: all 0.5s ease;
 }
 
-.banner-content .subtitle,
-.banner-content .main-title{
-  padding:0 1rem;
+/* .accordionTitle::after{
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: red;
 }
-
-/* .full-banner img{
-  border-radius: 0;
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  height: 590px;
-  max-width: unset;
+.accordionTitle.active::after{
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: black;
 } */
-
-  
-.banner-logos .btn-outline-light,
-.banner-logos .btn-light{
-  width: 80%;
-}
-  
-/* .slick-dots{
-  bottom: 30px !important;
-}
-
-.slick-dots li button:before{
-  font-size: 10px !important;
-  color: #FFF !important;
-}
-
-.slick-dots li.slick-active{
-  font-size: 13px !important;
-}  */
-
-/* ===End of Banner=== */
-
 
 /* ===Events & Programs=== */
 .programs-area.container,
@@ -468,22 +431,34 @@
   }
   /* ===End of Programs & Events=== */
 
-  /* ===Partner=== */
-  .partner-area{
-      padding-bottom: 50px;
+  /* ===FAQ=== */
+  .accordion .card,
+  .accordion .card .card-header{
+    background-color: #FFF;
+    border: none;
+    border-color: transparent;
+    box-shadow: 0px 9px 60px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 9px 60px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+  }
+  .accordion .card .card-header.active,
+  .accordion .card .card-header:hover{
+    background: var(--main-gradient);
+    color: #FFF;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+  
+  .accordion .card-body{
+    background: linear-gradient(90.04deg, #2181B7 1.72%, rgba(23, 151, 223, 0.94) 87.92%);
+    color: #FFF;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 
-  .partner-card img{
-    margin: auto;
-    margin-top: 1rem;
-  }
-  /* .partner-slider .slick-slide{
-    padding-right: 1rem;
-  }
-  .partner-slider .slick-list{
-    padding: 20px 1px;
-  } */
-  
+
 
   /* ===Register=== */
   .register-card{
@@ -576,5 +551,6 @@
   .mainHero{
     background-image: url(../images/background.png);
     height: 707px;
+    background-position: center;
   }
 }

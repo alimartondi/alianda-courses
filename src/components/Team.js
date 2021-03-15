@@ -8,7 +8,7 @@ export default function Teams() {
   return (
     <section className="teams" id="teams">
       <Container>
-        <Row className="mt-5">
+        <Row className="mt-5 d-flex justify-content-center">
           <Col lg={7} className="text-center">
             <p className="secondHero-text mt-5">Meet Teams</p>
             <h2 className="secondHero-title">Our Professional Teams</h2>
@@ -19,9 +19,9 @@ export default function Teams() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12}>
-            {teamsContents.map((content, i) => (
-              <div className="teamsCard text-center px-2" key={i}>
+          {teamsContents.map((content, i) => (
+            <Col lg={4} key={i}>
+              <div className="teamsCard text-center px-2">
                 <div className="teamsCard-img">
                   <img src={content.image} alt="" />
                 </div>
@@ -31,8 +31,8 @@ export default function Teams() {
                   <p>{content.body}</p>
                 </div>
               </div>
-            ))}
-          </Col>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>
@@ -44,21 +44,18 @@ const teamsContents = [
     image: TeamsA,
     name: "Free Mobile Application",
     position: "Head Office",
-    body:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    body: "Lorem ipsum dolor sit amet",
   },
   {
     image: TeamsB,
     name: "Free Mobile Application",
     position: "Head Office",
-    body:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    body: "Lorem ipsum dolor sit amet",
   },
   {
     image: TeamsC,
     name: "Free Mobile Application",
     position: "Head Office",
-    body:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    body: "Lorem ipsum dolor sit amet",
   },
 ];

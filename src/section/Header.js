@@ -127,10 +127,7 @@ export default function NavBar() {
           <img src={Logo} alt="Logo" onClick={scrollToTop} />
         </div>
         <div className={state.active ? "nav-items active" : "nav-items"}>
-          <div
-            className="sidebar-brand text-center mt-5 mb-3 d-block d-xl-none"
-            onClick={open}
-          >
+          <div className="sidebar-brand text-center mt-5 mb-3" onClick={open}>
             <img src={FooterBrand} alt="sidebar logo" onClick={scrollToTop} />
           </div>
           <hr className="d-block d-xl-none text-center sidebar-line" />
@@ -176,18 +173,18 @@ export default function NavBar() {
               Price
             </Link>
           </Nav>
-          <Nav className="d-block d-lg-flex">
+          <Nav className="nav-btn d-block d-lg-flex flex-lg-nowrap">
             <Button
-              variant="outline-light md-info px-4 rounded-lg   mt-5 mt-lg-0"
+              variant="outline-light md-info px-4 px-md-2 rounded-lg mt-5 mt-lg-0"
               href="#"
-              className="nav-btn w-100"
+              className="second-button"
             >
               Sign up
             </Button>
             <Button
-              variant="light md-info px-4 rounded-lg mt-3 mt-lg-0"
+              variant="light"
               href="#"
-              className="nav-btn w-100"
+              className="main-button px-4 px-md-2 rounded-lg mt-2 mt-lg-0 ml-lg-2"
             >
               Login
             </Button>
