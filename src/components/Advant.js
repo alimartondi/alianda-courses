@@ -21,6 +21,25 @@ export default function Advantages() {
         </Row>
         <Row>
           <Col lg={12}>
+            <div className="advantItems">
+              <div className="advantItems-grid">
+                {advantContents.map((content, i) => (
+                  <div className="advantItems-card" key={i}>
+                    <div className="advantItems-img">
+                      <img src={content.image} alt="" />
+                    </div>
+                    <div className="advantItems-content">
+                      <h6 className="mainSecond-text mt-4">{content.title}</h6>
+                      <p className="description mt-4">{content.body}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col lg={12}>
             <div className="advantItems mt-4">
               <div className="advantItems-grid">
                 {advantContents.map((content, i) => (
@@ -58,12 +77,6 @@ const advantContents = [
   },
   {
     image: Idea,
-    title: "An Easy Study Approach",
-    body:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
-  },
-  {
-    image: Badge,
     title: "An Easy Study Approach",
     body:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",

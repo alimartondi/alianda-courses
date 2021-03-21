@@ -14,8 +14,8 @@ export default function Main() {
     <div className="main">
       <Hero />
       <Advantages />
-      <About />
       <Feautured />
+      <About />
       <PricingPlans />
       <Testimonial />
       <Teams />

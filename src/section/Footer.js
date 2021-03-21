@@ -17,7 +17,7 @@ export default function Footer() {
     <section className="footer-area pt-5" id="footer">
       <Container>
         <Row>
-          <Col lg={4} className="mb-4">
+          <Col lg={4} className="mb-5 text-center text-md-left">
             <div className="footerBrand">
               <img src={FooterBrand} alt="footer-brand" />
             </div>
@@ -110,11 +110,11 @@ export default function Footer() {
             </div>
           </Col>
           <Col lg={3}>
-            <div className="footerPartner d-flex justify-content-end">
+            <div className="footerPartner d-flex mt-5 justify-content-center justify-content-lg-end">
               <img src={Visa} alt="visa-logo" />
-              <img src={Mastercard} alt="mastercard-logo" />
+              <img src={Mastercard} alt="mastercard-logo" className="ml-4" />
             </div>
-            <div className="footerSoc d-flex justify-content-end mt-3">
+            <div className="footerSoc d-flex mt-3 justify-content-center justify-content-lg-end">
               <a href="https://www.instagram.com/">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>

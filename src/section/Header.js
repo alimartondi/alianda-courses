@@ -156,7 +156,7 @@ export default function NavBar() {
               to="feautured"
               smooth={true}
               spy={true}
-              offset={-80}
+              // offset={60}
               className="nav-link"
               onClick={open}
             >
@@ -166,7 +166,7 @@ export default function NavBar() {
               to="price"
               smooth={true}
               spy={true}
-              offset={10}
+              offset={-60}
               className="nav-link"
               onClick={open}
             >
