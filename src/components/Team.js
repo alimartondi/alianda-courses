@@ -23,7 +23,7 @@ export default function Teams() {
             <Col lg={4} key={i}>
               <div className="teamsCard text-center px-2">
                 <div className="teamsCard-img">
-                  <img src={content.image} alt="" />
+                  <img src={content.image} alt="team" className="img-fluid" />
                 </div>
                 <div className="teamsCard-content">
                   <h6 className="secondMain-text mt-3">{content.name}</h6>

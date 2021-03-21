@@ -1,8 +1,6 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import Register from "../images/register.png";
 import "../style/style.css";
-import Shape from "../images/shape-2.png";
 
 export default function RegisterSection() {
   return (
@@ -21,13 +19,7 @@ export default function RegisterSection() {
                 </p>
                 <Button variant="info mt-3">Daftar Sekarang</Button>
               </div>
-              <div className="register-card-img">
-                <img
-                  src={Register}
-                  alt="Register"
-                  className="d-none d-md-block"
-                />
-              </div>
+              <div className="register-card-img"></div>
             </div>
           </Col>
         </Row>
