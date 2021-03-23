@@ -20,7 +20,7 @@ export default function Main() {
       <Testimonial />
       <Teams />
       <Faq />
-      {/* <RegisterSection /> */}
+      <RegisterSection />
     </div>
   );
 }

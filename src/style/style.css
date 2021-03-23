@@ -290,8 +290,6 @@
   padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -50px;
-  margin-bottom: -60px;
   position: relative;
   z-index: 10;
   overflow: hidden;
@@ -330,7 +328,7 @@
 .footer-area{
   position: relative;
   z-index: 3;
-  background-color: var(--main-blue);
+  background: var(--main-gradient);
   color: var(--main-light);
 }
 .footerSoc a{
@@ -531,7 +529,7 @@
   .register-card {
     max-width: 100%;
     height: auto;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
   }
 
   .partner-card{

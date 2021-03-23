@@ -20,7 +20,7 @@ export default function ProgramsSection() {
         </Row>
         <Row>
           <Col lg={12}>
-            <div className="feauturedItems mt-4">
+            <div className="feauturedItems mt-2">
               <div className="feauturedItems-grid d-block d-md-flex justify-content-between">
                 {feauturedContents.map((content, i) => (
                   <Card

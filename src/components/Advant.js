@@ -1,8 +1,8 @@
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
-import Smartphone from "../images/phone.svg";
-import Material from "../images/material.svg";
-import Idea from "../images/idea.svg";
+import Case from "../images/case.svg";
+import Mobile from "../images/mobile.svg";
+import Work from "../images/work.svg";
 import Badge from "../images/badge.svg";
 
 export default function Advantages() {
@@ -38,25 +38,6 @@ export default function Advantages() {
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col lg={12}>
-            <div className="advantItems mt-4">
-              <div className="advantItems-grid">
-                {advantContents.map((content, i) => (
-                  <div className="advantItems-card" key={i}>
-                    <div className="advantItems-img">
-                      <img src={content.image} alt="" />
-                    </div>
-                    <div className="advantItems-content">
-                      <h6 className="mainSecond-text mt-4">{content.title}</h6>
-                      <p className="description mt-4">{content.body}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Col>
-        </Row>
       </Container>
     </section>
   );
@@ -64,20 +45,20 @@ export default function Advantages() {
 
 const advantContents = [
   {
-    image: Smartphone,
+    image: Case,
+    title: "Learn With a Case Studies",
+    body:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+  },
+  {
+    image: Mobile,
     title: "Free Mobile Application",
     body:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
   },
   {
-    image: Material,
-    title: "Free Teaching Video Material",
-    body:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
-  },
-  {
-    image: Idea,
-    title: "An Easy Study Approach",
+    image: Work,
+    title: "Flexuble Learning Time",
     body:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
   },
