@@ -1,7 +1,8 @@
 import React from "react";
-import About from "../components/About";
+import "../App.css";
 import Advantages from "../components/Advant";
 import Feautured from "../components/Feautured";
+import Class from "../components/Class";
 import Hero from "../components/Hero";
 import PricingPlans from "../components/Price";
 import Faq from "../components/Question";
@@ -15,11 +16,11 @@ export default function Main() {
       <Hero />
       <Advantages />
       <Feautured />
-      <About />
+      <Class />
       <PricingPlans />
-      <Testimonial />
       <Teams />
-      <Faq />
+      <Testimonial />
+      {/* <Faq /> */}
       <RegisterSection />
     </div>
   );

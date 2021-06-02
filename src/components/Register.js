@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import "../style/style.css";
 import Appstore from "../images/appstore.svg";
 import Playstore from "../images/playstore.svg";
@@ -21,7 +21,7 @@ export default function RegisterSection() {
                   <br /> We're here to answer them all
                 </p>
                 <div className="registerCard-button mt-5">
-                  <a href="#">
+                  <a href="/">
                     <img
                       src={Appstore}
                       alt="appstore-logo"
@@ -29,7 +29,7 @@ export default function RegisterSection() {
                       target="blank"
                     />
                   </a>
-                  <a href="#">
+                  <a href="/">
                     <img
                       src={Playstore}
                       alt="playstore-logo"

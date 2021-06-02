@@ -1,9 +1,8 @@
 import React from "react";
-import { Col, Row, Container } from "react-bootstrap";
+import { Col, Row, Container, Card } from "react-bootstrap";
 import Case from "../images/case.svg";
 import Mobile from "../images/mobile.svg";
 import Work from "../images/work.svg";
-import Badge from "../images/badge.svg";
 
 export default function Advantages() {
   return (
@@ -21,18 +20,18 @@ export default function Advantages() {
         </Row>
         <Row>
           <Col lg={12}>
-            <div className="advantItems">
-              <div className="advantItems-grid">
+            <div className="advant-items">
+              <div className="advant-items__grid">
                 {advantContents.map((content, i) => (
-                  <div className="advantItems-card" key={i}>
-                    <div className="advantItems-img">
+                  <Card className="advant-items__card border-0" key={i}>
+                    <div className="advant-items-img">
                       <img src={content.image} alt="" />
                     </div>
-                    <div className="advantItems-content">
+                    <div className="advant-items__content">
                       <h6 className="mainSecond-text mt-4">{content.title}</h6>
                       <p className="description mt-4">{content.body}</p>
                     </div>
-                  </div>
+                  </Card>
                 ))}
               </div>
             </div>
@@ -47,19 +46,16 @@ const advantContents = [
   {
     image: Case,
     title: "Learn With a Case Studies",
-    body:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
   },
   {
     image: Mobile,
     title: "Free Mobile Application",
-    body:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
   },
   {
     image: Work,
     title: "Flexuble Learning Time",
-    body:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
   },
 ];

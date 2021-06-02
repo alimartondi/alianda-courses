@@ -1,17 +1,17 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import TeamsA from "../images/teams-a.png";
-import TeamsB from "../images/teams-b.png";
-import TeamsC from "../images/teams-c.png";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import Ludovic from "../images/ludovic.png";
+import Aziz from "../images/aziz.png";
+import Vicky from "../images/vicky.png";
+import Mathilde from "../images/mathilde.png";
 
 export default function Teams() {
   return (
-    <section className="teams" id="teams">
+    <section>
       <Container>
-        <Row className="mt-5 d-flex justify-content-center">
+        <Row className="justify-content-center">
           <Col lg={7} className="text-center">
-            <p className="secondHero-text mt-5">Meet Teams</p>
-            <h2 className="secondHero-title">Our Professional Teams</h2>
+            <p className="secondHero-text mt-5">Start Now</p>
+            <h1 className="secondHero-title">Our Professional Teams</h1>
             <p className="mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
               corporis dolores labore? Unde, quaerat deleniti.
@@ -19,43 +19,79 @@ export default function Teams() {
           </Col>
         </Row>
         <Row>
-          {teamsContents.map((content, i) => (
-            <Col lg={4} key={i}>
-              <div className="teamsCard text-center px-2">
-                <div className="teamsCard-img">
-                  <img src={content.image} alt="team" className="img-fluid" />
-                </div>
-                <div className="teamsCard-content">
-                  <h6 className="secondMain-text mt-3">{content.name}</h6>
-                  <p>{content.position}</p>
-                  <p>{content.body}</p>
-                </div>
+          <Col lg={12}>
+            <div className="team-items">
+              <div className="team-items__grid">
+                {teamContents.map((content, i) => (
+                  <Card className="team-items__card border-0 p-0" key={i}>
+                    <Card.Body className="p-0 team-card__body">
+                      <img
+                        src={content.image}
+                        alt={content.name}
+                        className="img-fluid"
+                      />
+                    </Card.Body>
+                    <span className="team-nickname mx-auto w-100">
+                      <h1 className="nickname">{content.name}</h1>
+                      <h5 className="fullname mb-0">{content.fullname}</h5>
+                      <p className="position d-none d-md-block text-white m-0">
+                        Frontend Engineer
+                      </p>
+                    </span>
+                  </Card>
+                ))}
               </div>
-            </Col>
-          ))}
+            </div>
+          </Col>
         </Row>
       </Container>
     </section>
   );
 }
 
-const teamsContents = [
+const teamContents = [
   {
-    image: TeamsA,
-    name: "Free Mobile Application",
-    position: "Head Office",
-    body: "Lorem ipsum dolor sit amet",
+    name: "ludovic",
+    fullname: "Ludovic Migneault",
+    image: Ludovic,
+    social: {
+      facebook: "/",
+      inst: "/",
+      link: "/",
+      gmail: "ludovic@gmail.com",
+    },
   },
   {
-    image: TeamsB,
-    name: "Free Mobile Application",
-    position: "Head Office",
-    body: "Lorem ipsum dolor sit amet",
+    name: "aziz",
+    fullname: "Junaid Aziz",
+    image: Aziz,
+    social: {
+      facebook: "/",
+      inst: "/",
+      link: "/",
+      gmail: "ludovic@gmail.com",
+    },
   },
   {
-    image: TeamsC,
-    name: "Free Mobile Application",
-    position: "Head Office",
-    body: "Lorem ipsum dolor sit amet",
+    name: "matilde",
+    fullname: "Matilde Langevin",
+    image: Mathilde,
+    social: {
+      facebook: "/",
+      inst: "/",
+      link: "/",
+      gmail: "ludovic@gmail.com",
+    },
+  },
+  {
+    name: "vicky",
+    fullname: "Vicky Hladynets",
+    image: Vicky,
+    social: {
+      facebook: "/",
+      inst: "/",
+      link: "/",
+      gmail: "ludovic@gmail.com",
+    },
   },
 ];

@@ -1,15 +1,13 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React from "react";
 import "slick-carousel/slick/slick.css";
 import Hero from "../images/businessman.png";
-import Background from "../images/shape-background.svg";
 import "../style/style.css";
 import { Col, Button, Container, Row } from "react-bootstrap";
 
 export default function mainHero() {
   return (
-    <main className="mainHero" id="main">
-      <div className="mainHero-content">
+    <main className="main-hero" id="main">
+      <div className="main-hero__content">
         <Container>
           <Row>
             <Col lg={5} className="pr-4 pt-2 pt-md-5">
@@ -32,7 +30,7 @@ export default function mainHero() {
               </Button>
             </Col>
             <Col lg={7} className="d-none d-lg-block text-right pr-0">
-              <img src={Hero} alt="hero-image" className="img-fluid" />
+              <img src={Hero} alt="hero" className="img-fluid" />
             </Col>
           </Row>
         </Container>

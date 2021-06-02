@@ -110,7 +110,7 @@ export default function Footer() {
             </div>
           </Col>
           <Col lg={3}>
-            <div className="footerPartner d-flex mt-5 justify-content-center justify-content-lg-end">
+            <div className="footerPartner d-flex mt-5 mt-lg-0 justify-content-center justify-content-lg-end">
               <img src={Visa} alt="visa-logo" />
               <img src={Mastercard} alt="mastercard-logo" className="ml-4" />
             </div>

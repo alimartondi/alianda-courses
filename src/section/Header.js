@@ -143,10 +143,10 @@ export default function NavBar() {
               Overview
             </Link>
             <Link
-              to="about"
+              to="advant"
               smooth={true}
               spy={true}
-              offset={-80}
+              offset={-60}
               className="nav-link"
               onClick={open}
             >
@@ -156,7 +156,7 @@ export default function NavBar() {
               to="feautured"
               smooth={true}
               spy={true}
-              // offset={60}
+              offset={-60}
               className="nav-link"
               onClick={open}
             >
