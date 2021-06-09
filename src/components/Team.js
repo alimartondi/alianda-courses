@@ -8,9 +8,8 @@ export default function Teams() {
   return (
     <section>
       <Container>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mt-5">
           <Col lg={7} className="text-center">
-            <p className="secondHero-text mt-5">Start Now</p>
             <h1 className="secondHero-title">Our Professional Teams</h1>
             <p className="mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex

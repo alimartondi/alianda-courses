@@ -28,7 +28,7 @@ export default class Ffeautured extends Component {
 
     return (
       <section>
-        <Container>
+        <Container className="m-0 mx-auto p-0">
           <Row className="mt-5 flex justify-content-center">
             <Col lg={7} className="text-center mb-5">
               <p className="secondHero-text">Top Feautured</p>

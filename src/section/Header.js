@@ -146,7 +146,7 @@ export default function NavBar() {
               to="advant"
               smooth={true}
               spy={true}
-              offset={-60}
+              offset={-100}
               className="nav-link"
               onClick={open}
             >
@@ -156,7 +156,7 @@ export default function NavBar() {
               to="feautured"
               smooth={true}
               spy={true}
-              offset={-60}
+              offset={-100}
               className="nav-link"
               onClick={open}
             >

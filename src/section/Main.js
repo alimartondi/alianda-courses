@@ -16,7 +16,7 @@ export default function Main() {
       <Hero />
       <Advantages />
       <Feautured />
-      <Class />
+      {/* <Class /> */}
       <PricingPlans />
       <Teams />
       <Testimonial />

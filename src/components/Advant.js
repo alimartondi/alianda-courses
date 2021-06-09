@@ -8,9 +8,8 @@ export default function Advantages() {
   return (
     <section className="advantages" id="advant">
       <Container>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mt-5">
           <Col lg={7} className="text-center">
-            <p className="secondHero-text mt-5">Start Now</p>
             <h1 className="secondHero-title">Why should you choose us?</h1>
             <p className="mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
@@ -28,7 +27,7 @@ export default function Advantages() {
                       <img src={content.image} alt="" />
                     </div>
                     <div className="advant-items__content">
-                      <h6 className="mainSecond-text mt-4">{content.title}</h6>
+                      <h6 className="third-title mt-4">{content.title}</h6>
                       <p className="description mt-4">{content.body}</p>
                     </div>
                   </Card>
@@ -46,16 +45,18 @@ const advantContents = [
   {
     image: Case,
     title: "Learn With a Case Studies",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    body: `In this course, after learning
+    the basics of programming, we
+    will also study with case studies as the final goal`,
   },
   {
     image: Mobile,
     title: "Free Mobile Application",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    body: "We know it's hard for you to leave your smartphone, so we provide a place to study that is easy for you to reach",
   },
   {
     image: Work,
-    title: "Flexuble Learning Time",
-    body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excorporis dolores labore? Unde, quaerat deleniti.",
+    title: "Flexible Learning Time",
+    body: "Determine study hours as you wish, take advantage of the time and place that is most convenient for you",
   },
 ];

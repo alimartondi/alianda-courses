@@ -13,14 +13,14 @@ export default function mainHero() {
             <Col lg={5} className="pr-4 pt-2 pt-md-5">
               <p className="mainHero-text mt-5">Do you know?</p>
               <h1 className="mainHero-title">
-                Millions People
-                <br /> Have Joined, Now <br />
-                It's Your Turn,
+                Millions people
+                <br /> Have joined, now <br />
+                It's your turn,
               </h1>
               <p className="mainHero-text mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odio
-                omnis, tempora inventore ipsa eveniet fuga, qui sequi
-                perferendis explicabo.
+                We provide a comfortable place to learn programming, take your
+                most comfortable place and join us, be a successful person from
+                now!
               </p>
               <Button
                 variant="light mt-5 px-4 py-2 rounded-lg"

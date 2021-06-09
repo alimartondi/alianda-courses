@@ -12,9 +12,8 @@ export default function ProgramsSection() {
   return (
     <section className="feautured" id="feautured">
       <Container>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mt-5">
           <Col lg={7} className="text-center">
-            <p className="secondHero-text mt-5">Start Learning Today</p>
             <h2 className="secondHero-title">Populer Online Classes</h2>
             <p className="mt-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
@@ -40,7 +39,9 @@ export default function ProgramsSection() {
                       <Card.Title className="w-75">
                         <h6 className="secondHero-title">{content.title}</h6>
                       </Card.Title>
-                      <Card.Text>{content.body}</Card.Text>
+                      <Card.Text className="description mt-4">
+                        {content.body}
+                      </Card.Text>
 
                       <Button className="third-button btn-light py-2 px-3 text-right mt-4">
                         More Detail
@@ -70,11 +71,11 @@ const feauturedContents = [
   {
     icon: faCode,
     title: "Front-End Developer",
-    body: "Learn to make UI/UX Website or Mobile App using Figma and XD with various case studies",
+    body: "In this course we use popular Frontend Frameworks like ReactJs, Tailwindcss and many",
   },
   {
     icon: faDesktop,
     title: "Full-Stack Developer",
-    body: "Learn to make UI/UX Website or Mobile App using Figma and XD with various case studies",
+    body: "We also provide classes for those of you who like a challenge to master everything",
   },
 ];

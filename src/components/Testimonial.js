@@ -18,10 +18,10 @@ export default class Testimonial extends Component {
   render() {
     const settings = {
       className: "center",
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
-      centerMode: true,
+      // centerMode: true,
       centerPadding: "20px",
       infinite: true,
       responsive: [
@@ -40,7 +40,6 @@ export default class Testimonial extends Component {
         <Container className="">
           <Row className="justify-content-center mt-5">
             <Col lg={7} className="text-center">
-              <p className="secondHero-text">Testimonial</p>
               <h2 className="secondHero-title">What Are The Saying</h2>
               <p className="mainSecond-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis

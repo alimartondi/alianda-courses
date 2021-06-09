@@ -205,9 +205,12 @@ code {
   letter-spacing: normal;
   margin-bottom: 0;
 }
+.third-title {
+  font-size: 20px;
+}
 
 .description {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .mainCard-title {
