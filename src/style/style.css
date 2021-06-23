@@ -1,24 +1,34 @@
 /*=== ALL CSS STYLE=== */
 
 /* ===Hero=== */
-.main-hero {
-  background: var(--main-gradient);
+.hero {
+  background: var(--main-blue);
   height: 640px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
-.main-hero__content {
+.hero-content {
+  position: relative;
   padding-top: 6rem;
 }
 
+.partner-box {
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
+}
+.partner-box img {
+  max-width: 23%;
+  opacity: 0.7;
+}
 /* ===Advantages=== */
 .advant-items,
-.pricingPlans-items,
+.pricing-plans__items,
 .feautured-items,
-.team-items {
+.team-items,
+.category-items {
   position: relative;
   overflow-x: auto;
   overflow-y: hidden;
@@ -27,9 +37,10 @@
 }
 
 .advant-items__grid,
-.pricingPlans-grid,
+.pricing-plans__grid,
 .feautured-items__grid,
-.team-items__grid {
+.team-items__grid,
+.category-items__grid {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -44,62 +55,110 @@
 }
 
 .advant-items__card,
-.pricingPlans-card,
-.feautured-items__card,
+.pricing-card,
+.feautured-card,
+.category-card,
 .team-items__card {
   text-align: center;
   display: inline-block;
   overflow-x: auto;
   margin-right: 1.5rem;
-  padding-top: 1.5rem;
-  border-radius: 1rem;
   width: 280px;
   background-color: var(--main-light);
-  border: none;
   box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
 }
 
-.advant-items-img img {
-  max-width: 100%;
-}
-
-.advant-items__content {
-  padding: 0.9rem;
+.feautured,
+.tools,
+.price,
+.category,
+.register-area {
+  margin-top: 55px;
 }
 
 /* ====About Us=== */
-.amountText {
-  font-size: 35px;
+/* .about {
+  background: linear-gradient(249.98deg, #003b73 -5.07%, #0074b7 103.87%);
+  margin-top: 80px;
+  padding-top: 55px;
+  padding-bottom: 200px;
+  color: var(--main-light);
+  text-align: center;
+} */
+
+.about-content {
+  /* height: 500px; */
+  background-color: var(--main-blue);
+  border-radius: 20px;
+}
+
+.about-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.about-card {
+  background-color: var(--main-light);
+  border-radius: 8px;
+  color: var(--main-dark);
+  padding: 30px 10px;
+}
+
+.about-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ===Feautured=== */
+
+.category-card__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background-color: var(--main-blue);
+}
+
+/* ===Plan=== */
+.pricing-card {
+  border: none;
+  height: 360px;
+  margin-top: 30px;
+}
+.pricing-card:nth-child(2) {
+  height: auto;
+  margin-top: 0;
+}
+
+.pricing-card .cost {
+  font-size: 30px;
   font-weight: 600;
   color: var(--main-blue);
 }
 
-/* ===Feautured=== */
-/* .feauturedItems-card {
-  max-width: 330px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
-} */
-
-.feautured-card__icon {
-  height: 60px;
-  width: 60px;
-  background-color: var(--main-blue);
-  border-radius: 10px;
-  font-size: 1.5rem;
-}
-
-/* ===Plan=== */
-.pricingPlans-card {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
 /* ===Testimonial=== */
-.testimonialCard {
-  padding: 2rem 0;
+.testimonial-card {
+  width: 340px;
+  padding: 1rem 0;
   border-radius: 12px;
+}
+.slick-slide {
+  padding: 1rem;
+}
+.slick-slider .slick-center .testimonial-card {
+  box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
+  height: 400px;
+  margin-top: -15px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  margin-top: 15px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--main-blue) !important;
 }
 
 .testimonialCard-link-social .link-social {
@@ -111,7 +170,7 @@
   color: #292929;
 }
 
-.slick-slide {
+/* .slick-slide {
   margin-right: 1.3rem;
 }
 .slick-track {
@@ -138,7 +197,7 @@
   content: "";
   font-family: "Poppins", sans-serif !important;
   color: var(--main-blue) !important;
-}
+} */
 
 /* Rectangle 67 */
 .feautured-card {
@@ -465,67 +524,50 @@
 /* ===RESPONSIVE=== */
 @media (min-width: 1024px) {
   /* ===Banner=== */
-
-  .banner-content {
-    text-align: left;
-    white-space: pre-line;
+  .hero {
+    height: 700px;
+    /* padding-bottom: 4.1rem; */
+  }
+  .hero-content {
+    padding-top: 8rem;
   }
 
-  .banner-content .main-title {
-    margin-top: 90px;
-  }
-
-  .banner-content .subtitle,
-  .banner-content .main-title {
-    max-width: 30rem;
-    padding: 0;
-  }
-
-  .full-banner {
-    /* -o-object-fit: cover; */
-    /* object-fit: cover; */
-    height: 667px;
-    /* width: 100%; */
-  }
-
-  /* .wish-festival-logo{
-    width: 100px;
-    overflow: hidden;
-  } */
-  .wish-online-logo img,
-  .wish-festival-logo img {
-    max-width: 300px;
-  }
-
-  .banner-logos {
-    justify-content: start;
+  .feautured,
+  .tools,
+  .price,
+  .about,
+  .register-area {
+    margin-top: 120px;
   }
   /* ===End of Banner=== */
 
+  .about-content img {
+    margin-top: -80px;
+  }
+
   /* ===Programs & Events=== */
-  .advant-items__card,
+  .pricing-card,
   .events-card,
-  .feautured-items__card,
-  .team-items__card {
+  .feautured-card,
+  .team-items__card,
+  .category-card {
     width: 100%;
     margin-right: 0;
+    box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
     /* box-shadow: 0 2px 14px 0 #eeeeee; */
   }
   .advant-items__card {
     box-shadow: none;
   }
 
-  .advant-items__grid,
+  .pricing-plans__grid,
   .feautured-items__grid,
-  .team-items__grid {
+  .team-items__grid,
+  .category-items__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
     margin-top: 1rem;
-  }
-
-  .team-items__grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr !important;
   }
   /* ===End of Programs & Events=== */
 

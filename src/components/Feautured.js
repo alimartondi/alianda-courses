@@ -1,56 +1,37 @@
-import { Card, Col, Container, Row, Button } from "react-bootstrap";
-import { faArtstation, faReact } from "@fortawesome/free-brands-svg-icons";
-import {
-  faBezierCurve,
-  faChevronRight,
-  faCode,
-  faDesktop,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { Col, Row, Container, Card } from "react-bootstrap";
+import Case from "../images/case.svg";
+import App from "../images/mobile-app.svg";
+import Certificate from "../images/certificate.svg";
 
-export default function ProgramsSection() {
+export default function Feautured() {
   return (
     <section className="feautured" id="feautured">
       <Container>
-        <Row className="justify-content-center mt-5">
+        <Row className="justify-content-center">
           <Col lg={7} className="text-center">
-            <h2 className="secondHero-title">Populer Online Classes</h2>
-            <p className="mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              corporis dolores labore? Unde, quaerat deleniti.
+            <h1 className="second-title">Why should you choose us?</h1>
+            <p className="mt-2">
+              Join us and get various benefits with the facilities we provide,
+              start developing your career in programming
             </p>
           </Col>
         </Row>
         <Row>
-          <Col lg={12}>
-            <div className="feautured-items mt-2">
+          <Col lg={12} className="feautured-items">
+            <div className="">
               <div className="feautured-items__grid">
                 {feauturedContents.map((content, i) => (
-                  <Card
-                    className="feautured-items__card text-left border-0 p-2"
-                    key={i}
-                  >
-                    <Card.Header className="bg-white border-0">
-                      <div className="feautured-card__icon d-flex justify-content-center align-items-center text-white">
-                        <FontAwesomeIcon icon={content.icon}></FontAwesomeIcon>
-                      </div>
-                    </Card.Header>
-                    <Card.Body>
-                      <Card.Title className="w-75">
-                        <h6 className="secondHero-title">{content.title}</h6>
-                      </Card.Title>
-                      <Card.Text className="description mt-4">
-                        {content.body}
-                      </Card.Text>
-
-                      <Button className="third-button btn-light py-2 px-3 text-right mt-4">
-                        More Detail
-                        <FontAwesomeIcon
-                          className="ml-2"
-                          icon={faChevronRight}
-                        ></FontAwesomeIcon>
-                      </Button>
-                    </Card.Body>
+                  <Card className="feautured-card border-0 p-md-5 p-4" key={i}>
+                    <div className="feautured-card__img">
+                      <img src={content.image} alt="" className="img-fluid" />
+                    </div>
+                    <div className="feautured-items__content">
+                      <h6 className="third-title mt-4 mt-md-5">
+                        {content.title}
+                      </h6>
+                      <p className="description mt-4">{content.body}</p>
+                    </div>
                   </Card>
                 ))}
               </div>
@@ -64,18 +45,20 @@ export default function ProgramsSection() {
 
 const feauturedContents = [
   {
-    icon: faBezierCurve,
-    title: "Become a Master UI/UX",
-    body: "Learn to make UI/UX Website or Mobile App using Figma and XD with various case studies",
+    image: Case,
+    title: "Case Studies",
+    body: `In this course, after learning
+    the basics of programming, we
+    will also study with case studies as the final goal`,
   },
   {
-    icon: faCode,
-    title: "Front-End Developer",
-    body: "In this course we use popular Frontend Frameworks like ReactJs, Tailwindcss and many",
+    image: App,
+    title: "Mobile App",
+    body: "We know it's hard for you to leave your smartphone, so we provide a place to study that is easy for you to reach",
   },
   {
-    icon: faDesktop,
-    title: "Full-Stack Developer",
-    body: "We also provide classes for those of you who like a challenge to master everything",
+    image: Certificate,
+    title: "Certificate",
+    body: "Determine study hours as you wish, take feauturedage of the time and place that is most convenient for you",
   },
 ];

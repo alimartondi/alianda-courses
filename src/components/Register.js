@@ -6,7 +6,7 @@ import Playstore from "../images/playstore.svg";
 
 export default function RegisterSection() {
   return (
-    <section className="register-area mt-md-5" id="register">
+    <section className="register-area" id="register">
       <Container>
         <Row>
           <Col lg={12}>

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,Poppins:ital,wght@1,800,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap");
 :root {
-  --main-blue: #003b73;
+  --main-blue: #1a659e;
   --second-blue: #0162a1;
   --main-light: #ffffff;
   --main-grey: #f5f5f5;
-  --main-dark: #040404;
+  --main-dark: #2a2b3a;
   --main-gradient: linear-gradient(90deg, #003b73 0%, #0074b7 100%);
 }
 
@@ -133,7 +133,7 @@ img {
 body {
   font-family: "Poppins", sans-serif !important;
   margin: 0;
-  /* background-color: #f6f8fd !important; */
+  background: #eff5f5 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 2000px;
@@ -146,10 +146,16 @@ code {
     monospace;
 }
 
+.card {
+  border-radius: 10px !important;
+}
+
 /* ===Main Button=== */
 .main-button.btn-light {
-  background-color: #fff;
-  color: var(--main-blue);
+  background-color: #ff6e30;
+  color: var(--main-light);
+  font-weight: 00;
+  border-color: #ff6b35;
 }
 .main-button.btn-light:hover {
   background-color: transparent;
@@ -181,22 +187,22 @@ code {
   color: #fff;
 }
 
-.mainHero-title {
+.main-title {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.3;
   color: var(--main-light);
 }
 
-.mainHero-text {
-  font-size: 1.1rem;
-  font-weight: 300;
+.sub-title {
+  font-size: 1rem;
+  font-weight: 400;
   color: var(--main-light);
 }
-.secondHero-title {
+.second-title {
   color: var(--main-dark);
-  font-weight: 500;
-  font-size: 1.3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .secondHero-text {
   color: var(--main-blue);
@@ -226,13 +232,12 @@ code {
 }
 
 @media (min-width: 768px) {
-  .mainHero-title {
-    font-size: 45px;
+  .main-title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 3.5rem;
   }
-  .secondHero-title {
-    font-size: 32px;
-  }
-  .subtitle {
-    font-size: 18px;
+  .second-title {
+    font-size: 2.3rem;
   }
 }

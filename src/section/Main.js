@@ -1,26 +1,27 @@
 import React from "react";
 import "../App.css";
-import Advantages from "../components/Advant";
+import Category from "../components/Category";
 import Feautured from "../components/Feautured";
 import Class from "../components/Class";
 import Hero from "../components/Hero";
 import PricingPlans from "../components/Price";
-import Faq from "../components/Question";
 import RegisterSection from "../components/Register";
 import Teams from "../components/Team";
 import Testimonial from "../components/Testimonial";
+import About from "../components/About";
+import Tools from "../components/Tools";
 
 export default function Main() {
   return (
     <div className="main">
       <Hero />
-      <Advantages />
       <Feautured />
+      <About />
+      <Category />
+      <Tools />
       {/* <Class /> */}
       <PricingPlans />
-      <Teams />
       <Testimonial />
-      {/* <Faq /> */}
       <RegisterSection />
     </div>
   );

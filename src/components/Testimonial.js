@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import Robert from "../images/robert.png";
 import Alex from "../images/alex.png";
 import Morgan from "../images/morgan.png";
@@ -18,18 +18,20 @@ export default class Testimonial extends Component {
   render() {
     const settings = {
       className: "center",
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
-      arrows: true,
-      // centerMode: true,
-      centerPadding: "20px",
+      arrows: false,
+      centerMode: true,
+      centerPadding: "10px",
+      dots: true,
       infinite: true,
+      speed: 800,
       responsive: [
         {
-          breakpoint: 480,
+          breakpoint: 680,
           settings: {
             slidesToShow: 1,
-            arrows: false,
+            dots: true,
           },
         },
       ],
@@ -40,44 +42,34 @@ export default class Testimonial extends Component {
         <Container className="">
           <Row className="justify-content-center mt-5">
             <Col lg={7} className="text-center">
-              <h2 className="secondHero-title">What Are The Saying</h2>
-              <p className="mainSecond-text">
+              <h2 className="second-title">What our customers say</h2>
+              <p className="sub-title text-dark">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                 voluptatem consequatur quia error laboriosam tenetur eius.
               </p>
             </Col>
           </Row>
 
-          <Row className="mt-3"></Row>
-          <Slider {...settings}>
-            {testimonialContents.map((content, i) => (
-              <Col lg={12} className="testimonialCard text-center mt-3" key={i}>
-                <div className="testimonialCard-head">
-                  <img
-                    src={content.img}
-                    className="rounded-circle mx-auto"
-                    alt={content.name}
-                  />
-                  <div className="testimonialCard-link-social d-flex justify-content-center mt-3">
-                    <a href={content.facebook} className="link-social">
-                      <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
-                    </a>
-                    <a href={content.instagram} className="link-social">
-                      <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
-                    </a>
-                    <a href={content.linkedin} className="link-social">
-                      <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-                    </a>
-                  </div>
-                </div>
-                <div className="testimonialCard-content px-3">
-                  <p className="mainCard-title">{content.name}</p>
-                  <p className="mainCard-text">{content.profession}</p>
-                  <p className="description">{content.message}</p>
-                </div>
-              </Col>
-            ))}
-          </Slider>
+          <Row className="mt-3 justify-content-center">
+            <Col lg={12} className="px-2">
+              <Slider {...settings}>
+                {testimonialContents.map((content, i) => (
+                  <Card className="testimonial-card border-0">
+                    <Card.Body>
+                      <img
+                        src={content.img}
+                        alt={content.name}
+                        className="img-fluid rounded-lg mb-3"
+                      />
+                      <p className="third-title mb-0">{content.name}</p>
+                      <p className="description">{content.profession}</p>
+                      <p className="description">{content.comment}</p>
+                    </Card.Body>
+                  </Card>
+                ))}
+              </Slider>
+            </Col>
+          </Row>
         </Container>
       </section>
     );
@@ -92,7 +84,7 @@ const testimonialContents = [
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
-    message:
+    comment:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatem consequatur quia error laboriosam tenetur eius.",
   },
   {
@@ -102,7 +94,7 @@ const testimonialContents = [
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
-    message:
+    comment:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatem consequatur quia error laboriosam tenetur eius.",
   },
   {
@@ -112,7 +104,7 @@ const testimonialContents = [
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
-    message:
+    comment:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatem consequatur quia error laboriosam tenetur eius.",
   },
   {
@@ -122,7 +114,7 @@ const testimonialContents = [
     facebook: "https://www.facebook.com/",
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
-    message:
+    comment:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatem consequatur quia error laboriosam tenetur eius.",
   },
 ];

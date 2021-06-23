@@ -133,34 +133,35 @@ export default function NavBar() {
           <hr className="d-block d-xl-none text-center sidebar-line" />
           <Nav className="mr-auto flex-column flex-lg-row">
             <Link
-              to="main"
+              to="feautured"
               smooth={true}
               spy={true}
-              offset={-80}
+              offset={-120}
               className="nav-link"
               onClick={open}
             >
-              Overview
+              Feautured
             </Link>
+
             <Link
-              to="advant"
+              to="about"
               smooth={true}
               spy={true}
-              offset={-100}
+              offset={-120}
               className="nav-link"
               onClick={open}
             >
               About Us
             </Link>
             <Link
-              to="feautured"
+              to="category"
               smooth={true}
               spy={true}
-              offset={-100}
+              offset={-70}
               className="nav-link"
               onClick={open}
             >
-              Feautured
+              Category
             </Link>
             <Link
               to="price"

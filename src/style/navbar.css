@@ -14,8 +14,8 @@
   padding: 0 !important;
 }
 
-.navbar.scrolled{
-  background: var(--main-gradient);
+.navbar.scrolled {
+  background: var(--main-blue);
 }
 
 .navbar-logo img {
@@ -38,7 +38,7 @@
 }
 
 .nav-items.active {
-  background-color: #003B73;
+  background-color: #003b73;
   top: 0;
   left: 0;
   opacity: 1;
@@ -47,28 +47,27 @@
 .nav-link {
   color: var(--main-light);
   font-weight: 500;
-  font-size: 22px ;
-  
+  font-size: 22px;
 }
 
-.nav-items .nav-link{
+.nav-items .nav-link {
   cursor: pointer;
   transition: unset;
   padding: 0;
   transition: all 0.3s ease;
 }
 
-.nav-items.active .nav-button .btn{
+.nav-items.active .nav-button .btn {
   width: 100%;
 }
 
-.sidebar-line{
-  background-color: #FFF;
+.sidebar-line {
+  background-color: #fff;
 }
-.sidebar-brand img{
+.sidebar-brand img {
   max-width: 60%;
 }
-.nav-btn .btn{
+.nav-btn .btn {
   font-size: 1rem;
   font-weight: 400;
   width: 100%;
@@ -76,13 +75,14 @@
 
 /* ==Humberger Menu Icon== */
 
-.burger_hamburger--slider__3_wqL .burger_hamburger-inner__14XT2:after{
-  top:16px !important;
+.burger_hamburger--slider__3_wqL .burger_hamburger-inner__14XT2:after {
+  top: 16px !important;
 }
 
-.burger_hamburger--slider__3_wqL.burger_is-active__3Yxiv .burger_hamburger-inner__14XT2:after {
-  -webkit-transform: translate3d(0,-16px,0) rotate(-90deg);
-  transform: translate3d(0,-16px,0) rotate(-90deg) !important;
+.burger_hamburger--slider__3_wqL.burger_is-active__3Yxiv
+  .burger_hamburger-inner__14XT2:after {
+  -webkit-transform: translate3d(0, -16px, 0) rotate(-90deg);
+  transform: translate3d(0, -16px, 0) rotate(-90deg) !important;
 }
 
 .burger_hamburger-box__3lYk7 {
@@ -98,15 +98,14 @@
   border-radius: 0 !important;
 }
 
-.burger_hamburger-inner__14XT2:after{
+.burger_hamburger-inner__14XT2:after {
   bottom: -8px;
 }
-.burger_hamburger-inner__14XT2::before{
+.burger_hamburger-inner__14XT2::before {
   top: -8px;
 }
 
 /* ==End of Humberger Menu Icon== */
-
 
 /* ===NAVBAR RESPONSIVE=== */
 
@@ -132,14 +131,13 @@
     justify-content: space-between;
     padding: 0;
   }
-  
 
   .nav-items.active {
     display: none;
   }
 
   .nav-items .btn-info,
-  .nav-items .btn-outline-info{
+  .nav-items .btn-outline-info {
     font-size: 15px;
   }
 
@@ -162,7 +160,7 @@
   .nav-link:active {
     color: var(--main-light);
   }
-  .nav-btn .btn{
+  .nav-btn .btn {
     font-size: small;
     font-weight: 300;
     width: 100px;
@@ -180,9 +178,7 @@
   }
 
   .burger_hamburger__21cuQ,
-  .nav-items .sidebar-brand{
+  .nav-items .sidebar-brand {
     display: none !important;
   }
-  
 }
-
