@@ -17,26 +17,20 @@ export default function Feautured() {
             </p>
           </Col>
         </Row>
-        <Row>
-          <Col lg={12} className="feautured-items">
-            <div className="">
-              <div className="feautured-items__grid">
-                {feauturedContents.map((content, i) => (
-                  <Card className="feautured-card border-0 p-md-5 p-4" key={i}>
-                    <div className="feautured-card__img">
-                      <img src={content.image} alt="" className="img-fluid" />
-                    </div>
-                    <div className="feautured-items__content">
-                      <h6 className="third-title mt-4 mt-md-5">
-                        {content.title}
-                      </h6>
-                      <p className="description mt-4">{content.body}</p>
-                    </div>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </Col>
+        <Row className="mt-md-4 justify-content-around px-lg-2 text-center">
+          {feauturedContents.map((content, i) => (
+            <Col md={4} className="feautured-items mt-4 mt-lg-0" key={i}>
+              <Card className="feautured-card border-0 p-lg-5 p-4">
+                <div className="feautured-card__img">
+                  <img src={content.image} alt="" className="img-fluid" />
+                </div>
+                <div className="feautured-items__content">
+                  <h6 className="third-title mt-4 mt-md-5">{content.title}</h6>
+                  <p className="description mt-4">{content.body}</p>
+                </div>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>

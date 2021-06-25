@@ -140,7 +140,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={open}
             >
-              Feautured
+              Feautures
             </Link>
 
             <Link
@@ -151,7 +151,7 @@ export default function NavBar() {
               className="nav-link"
               onClick={open}
             >
-              About Us
+              About
             </Link>
             <Link
               to="category"
@@ -162,6 +162,16 @@ export default function NavBar() {
               onClick={open}
             >
               Category
+            </Link>
+            <Link
+              to="tools"
+              smooth={true}
+              spy={true}
+              offset={-150}
+              className="nav-link"
+              onClick={open}
+            >
+              Application
             </Link>
             <Link
               to="price"

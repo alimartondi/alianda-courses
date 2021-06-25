@@ -15,13 +15,13 @@ export default function Hero() {
         <Container>
           <Row>
             <Col lg={6} className="pr-0 pt-2 pt-md-5">
-              <p className="sub-title mb-0 mt-3">Get started</p>
+              <p className="sub-title mb-0 mt-5">Get started</p>
               <h1 className="main-title">
                 Become a frontend Developer{" "}
                 <span style={{ color: "#ff6e30" }}>in a cool </span>Away with
                 us,
               </h1>
-              <p className="sub-title mt-5 mt-md-4 pr-2 pr-md-5  ">
+              <p className="sub-title mt-4 mt-md-5 mt-md-4 pr-2 pr-md-5  ">
                 We provide a comfortable place to be a Frontend Developer, take
                 your most comfortable place and join us, be a successful person
                 from now!

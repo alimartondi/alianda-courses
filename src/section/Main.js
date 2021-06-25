@@ -6,7 +6,6 @@ import Class from "../components/Class";
 import Hero from "../components/Hero";
 import PricingPlans from "../components/Price";
 import RegisterSection from "../components/Register";
-import Teams from "../components/Team";
 import Testimonial from "../components/Testimonial";
 import About from "../components/About";
 import Tools from "../components/Tools";
@@ -17,12 +16,12 @@ export default function Main() {
       <Hero />
       <Feautured />
       <About />
-      <Category />
+      {/* <Category /> */}
       <Tools />
       {/* <Class /> */}
       <PricingPlans />
-      <Testimonial />
       <RegisterSection />
+      <Testimonial />
     </div>
   );
 }

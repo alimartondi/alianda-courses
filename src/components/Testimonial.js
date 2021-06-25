@@ -50,11 +50,11 @@ export default class Testimonial extends Component {
             </Col>
           </Row>
 
-          <Row className="mt-3 justify-content-center">
-            <Col lg={12} className="px-2">
+          <Row className="mt-3 justify-content-around px-lg-5">
+            <Col lg={12} className="px-0">
               <Slider {...settings}>
                 {testimonialContents.map((content, i) => (
-                  <Card className="testimonial-card border-0">
+                  <Card className="testimonial-card border-0 p-2">
                     <Card.Body>
                       <img
                         src={content.img}
@@ -70,6 +70,7 @@ export default class Testimonial extends Component {
               </Slider>
             </Col>
           </Row>
+          <hr className="mt-5" />
         </Container>
       </section>
     );

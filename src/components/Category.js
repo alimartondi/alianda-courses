@@ -22,31 +22,27 @@ export default function Category() {
           </Col>
         </Row>
         <Row>
-          <Col lg={12}>
-            <div className="category-items mt-2">
-              <div className="category-items__grid">
-                {categoryContents.map((content, i) => (
-                  <Card
-                    className="category-card text-left border-0 p-4 p-md-5"
-                    key={i}
-                  >
-                    <div className="category-card__icon d-flex justify-content-center align-items-center text-white">
-                      <FontAwesomeIcon icon={content.icon}></FontAwesomeIcon>
-                    </div>
-                    <h6 className="third-title mt-4">{content.title}</h6>
-                    <p className="description mt-3">{content.body}</p>
-                    <p className="mt-4">
-                      More Detail
-                      <FontAwesomeIcon
-                        className="ml-2 small"
-                        icon={faChevronRight}
-                      ></FontAwesomeIcon>
-                    </p>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </Col>
+          {categoryContents.map((content, i) => (
+            <Col md={4} className="featured-items" key={i}>
+              <Card
+                className="category-card text-center mt-4 border-0 p-4 p-md-4"
+                key={i}
+              >
+                <div className="category-card__icon d-flex justify-content-center align-items-center text-white">
+                  <FontAwesomeIcon icon={content.icon}></FontAwesomeIcon>
+                </div>
+                <h6 className="third-title mt-5">{content.title}</h6>
+                <p className="description mt-3">{content.body}</p>
+                <p className="mt-4 text-right">
+                  More Detail
+                  <FontAwesomeIcon
+                    className="ml-2 small"
+                    icon={faChevronRight}
+                  ></FontAwesomeIcon>
+                </p>
+              </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>

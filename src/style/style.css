@@ -11,104 +11,32 @@
 }
 
 .hero-content {
-  position: relative;
   padding-top: 6rem;
 }
 
-.partner-box {
-  border-radius: 10px;
-  box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
-}
-.partner-box img {
-  max-width: 23%;
-  opacity: 0.7;
-}
-/* ===Advantages=== */
-.advant-items,
-.pricing-plans__items,
-.feautured-items,
-.team-items,
-.category-items {
-  position: relative;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  padding: 0 0.8rem;
-}
-
-.advant-items__grid,
-.pricing-plans__grid,
-.feautured-items__grid,
-.team-items__grid,
-.category-items__grid {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  box-sizing: border-box;
-  float: left;
-  position: relative;
-  padding: 1.2rem 0;
-}
-
-.advant-items__card,
-.pricing-card,
-.feautured-card,
-.category-card,
-.team-items__card {
-  text-align: center;
-  display: inline-block;
-  overflow-x: auto;
-  margin-right: 1.5rem;
-  width: 280px;
-  background-color: var(--main-light);
-  box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
-}
-
+/* ===Feautures=== */
 .feautured,
 .tools,
 .price,
 .category,
 .about,
 .register-area {
-  margin-top: 55px;
+  margin-top: 60px;
+  padding-bottom: 60px;
 }
-
+.tools {
+  margin-top: 100px;
+}
 /* ====About Us=== */
-/* .about {
-  background: linear-gradient(249.98deg, #003b73 -5.07%, #0074b7 103.87%);
-  margin-top: 80px;
-  padding-top: 55px;
-  padding-bottom: 200px;
-  color: var(--main-light);
-  text-align: center;
-} */
-
-.about-content {
+.about-content,
+/* .tools-content, */
+.register-content {
   /* height: 500px; */
   background-color: var(--main-blue);
   border-radius: 20px;
 }
-
-.about-items {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-}
-
-.about-card {
-  background-color: var(--main-light);
-  border-radius: 8px;
-  color: var(--main-dark);
-  padding: 30px 10px;
-}
-
-.about-card h1 {
-  font-size: 2rem;
-  font-weight: 700;
+.about-content img {
+  margin-top: -35px;
 }
 
 /* ===Feautured=== */
@@ -121,11 +49,35 @@
   background-color: var(--main-blue);
 }
 
-/* ===Plan=== */
+/* ===Pricing=== */
+.pricing-items {
+  position: relative;
+  padding-left: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.pricing-items__grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 5px;
+  float: left;
+  position: relative;
+}
 .pricing-card {
+  display: inline-block;
   border: none;
-  height: 360px;
+  /* height: 360px; */
   margin-top: 30px;
+  overflow-x: auto;
+  width: 280px;
+  margin-right: 1.2rem;
 }
 .pricing-card:nth-child(2) {
   height: auto;
@@ -133,8 +85,8 @@
 }
 
 .pricing-card .cost {
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 35px;
+  font-weight: 700;
   color: var(--main-blue);
 }
 
@@ -145,7 +97,7 @@
   border-radius: 12px;
 }
 .slick-slide {
-  padding: 1rem;
+  padding: 1rem 1rem;
 }
 .slick-slider .slick-center .testimonial-card {
   box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
@@ -171,40 +123,11 @@
   color: #292929;
 }
 
-/* .slick-slide {
-  margin-right: 1.3rem;
-}
-.slick-track {
-  margin: 1rem 0.9rem;
-}
-.slick-next {
-  right: 0 !important;
-  top: -30px !important;
-}
-.slick-prev {
-  left: 640px !important;
-  top: -30px !important;
-}
-.slick-prev,
-.slick-next {
-  background: var(--main-light) !important;
-  height: 40px !important;
-  width: 40px !important;
-  border-radius: 10px;
-  box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
-}
-.slick-prev:before,
-.slick-next:before {
-  content: "";
-  font-family: "Poppins", sans-serif !important;
-  color: var(--main-blue) !important;
-} */
-
-/* Rectangle 67 */
 .feautured-card {
   background: #ffffff;
   box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
   border-radius: 10px;
+  transition: ease-in 0.3s;
 }
 
 /* === Teams === */
@@ -255,160 +178,6 @@
   font-size: 1.3rem;
 }
 
-/* .slick-slider .slick-slide {
-  filter: blur(2px);
-}
-.slick-slider .slick-center {
-  filter: none;
-}
-.slick-slider .slick-center .testimonialCard {
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-  transform: scale(1.1, 1.1);
-  transition: all 0.5s ease;
-}
-
-.slick-track {
-  padding: 3rem 0;
-}
-
-.slick-arrow {
-  background: var(--main-gradient) !important;
-  border-radius: 50%;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
-  height: 45px !important;
-  width: 45px !important;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-family: "poppins", sans-serif !important;
-  color: var(--main-light) !important;
-}
-
-.slick-prev,
-.slick-next {
-  top: 0 !important;
-  z-index: 2;
-}
-
-.slick-prev {
-  left: 0 !important;
-  margin-left: auto;
-  margin-right: 60px;
-  right: 0 !important;
-}
-
-.slick-next {
-  right: 0 !important;
-} */
-
-/* ===FAQ=== */
-.faq-card {
-  background-color: #fff;
-  transition: all 0.5ms ease-in;
-  cursor: pointer;
-}
-.faq-card:hover {
-  background: var(--main-gradient);
-  color: #fff;
-}
-
-.faq-card .card-body {
-  transition: all 0.5s ease;
-}
-
-.accordion__content {
-  position: relative;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  background-color: #2181b7;
-  color: #fff;
-  padding: 0 1rem;
-  z-index: -1;
-  box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
-  border-radius: 0 0 8px 8px;
-}
-
-.fa-chevron-right {
-  transition: all 0.3s ease;
-}
-.fa-chevron-right.rotate {
-  transition: all 0.3s ease-in-out;
-  transform: rotate(90deg);
-}
-
-.accordion {
-  background-color: #fff;
-  border-radius: 8px;
-  border: none;
-  margin-top: 1rem;
-  box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
-  cursor: pointer;
-}
-
-.accordion:hover,
-.accordion.active {
-  background-color: #2181b7;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-  box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
-}
-.accordion.active {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-/* ===Events & Programs=== */
-.programs-area.container,
-.events-area.container {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.programs-items,
-.events-items {
-  position: relative;
-  padding-left: 1rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
-.programs-items-grid,
-.events-items-grid {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  box-sizing: border-box;
-  padding: 5px;
-  float: left;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.programs-card,
-.events-card {
-  display: inline-block;
-  max-width: 240px;
-  margin-right: 1.2rem;
-  border-radius: 0.3rem;
-  overflow-x: auto;
-  background-color: var(--main-light);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-/* ===End of Events & Programs=== */
-
 /* ===Register=== */
 .register-card {
   height: 300px;
@@ -448,15 +217,16 @@
 
 /* ===Footer=== */
 .footer-area {
+  margin-top: 100px;
   position: relative;
   z-index: 3;
-  background: var(--main-gradient);
+  background: var(--main-blue);
   color: var(--main-light);
 }
 .footerSoc a {
   font-size: 2rem;
   margin-left: 1rem;
-  color: #fff;
+  color: var(--main-light);
 }
 .footerSoc a:hover {
   color: #cdcdcd;
@@ -527,7 +297,6 @@
   /* ===Banner=== */
   .hero {
     height: 700px;
-    /* padding-bottom: 4.1rem; */
   }
   .hero-content {
     padding-top: 8rem;
@@ -538,18 +307,27 @@
   .price,
   .about,
   .register-area {
-    margin-top: 120px;
+    margin-top: 100px;
+  }
+
+  .about-content,
+  /* .tools-content, */
+  .register-content {
+    /* height: 500px; */
+    background-color: var(--main-blue);
+    border-radius: 20px;
   }
   /* ===End of Banner=== */
 
   .about-content img {
     margin-top: -80px;
+    margin-left: -9rem;
   }
 
   /* ===Programs & Events=== */
   .pricing-card,
   .events-card,
-  .feautured-card,
+  .feautured-card:hover,
   .team-items__card,
   .category-card {
     width: 100%;
@@ -561,7 +339,7 @@
     box-shadow: none;
   }
 
-  .pricing-plans__grid,
+  .pricing-items__grid,
   .feautured-items__grid,
   .team-items__grid,
   .category-items__grid {
@@ -624,26 +402,8 @@
 
 /* ===Responsive Medium Media=== */
 @media (min-width: 768px) {
-  .banner-logos .btn-outline-light,
-  .banner-logos .btn-light {
-    width: 100%;
-  }
-
-  .register-card {
-    max-width: 100%;
-    height: auto;
-    padding: 2rem 2rem;
-  }
-
-  .partner-card {
-    background-color: var(--main-light);
-    border-radius: 10px;
-    height: 100px;
-    padding-right: 1rem;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .feautured {
+    margin-top: 100px;
   }
 
   .footer-items {
