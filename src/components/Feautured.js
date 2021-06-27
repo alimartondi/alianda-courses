@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Container, Card } from "react-bootstrap";
 import Case from "../images/case.svg";
-import App from "../images/mobile-app.svg";
+import App from "../images/app.svg";
 import Certificate from "../images/certificate.svg";
 
 export default function Feautured() {
@@ -17,13 +17,16 @@ export default function Feautured() {
             </p>
           </Col>
         </Row>
-        <Row className="mt-md-4 justify-content-around px-lg-2 text-center">
+        <Row className="mt-md-4 justify-content-around">
           {feauturedContents.map((content, i) => (
             <Col md={4} className="feautured-items mt-4 mt-lg-0" key={i}>
               <Card className="feautured-card border-0 p-lg-5 p-4">
-                <div className="feautured-card__img">
-                  <img src={content.image} alt="" className="img-fluid" />
+                <div className="feautures-card__icon d-flex justify-content-center align-items-center">
+                  <img src={content.image} alt={content.title} />
                 </div>
+                {/* <div className="feautured-card__img">
+                  <img src={content.image} alt="" className="img-fluid" />
+                </div> */}
                 <div className="feautured-items__content">
                   <h6 className="third-title mt-4 mt-md-5">{content.title}</h6>
                   <p className="description mt-4">{content.body}</p>

@@ -1,19 +1,18 @@
 import React from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
 import "../style/style.css";
-import Appstore from "../images/appstore.svg";
-import Playstore from "../images/playstore.svg";
 
 export default function RegisterSection() {
   return (
-    <section className="register-area" id="register">
+    <section className="register-area px-2 py-4 px-md-0" id="register">
       <Container className="register-content py-5">
-        <Row>
-          <Col lg={12} className="text-center">
-            <h1 className="main-title">Ready to Growup your carier?</h1>
-            <p className="sub-title">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Similique dolor voluptas aperiam vitae quae nulla?
+        <Row className="justify-content-center">
+          <Col lg={7} className="text-center">
+            <h1 className="second-title text-white">
+              Ready to Growup your carier?
+            </h1>
+            <p className="sub-title px-md-5">
+              Learn directly from experienced mentors in his field indefinitely
             </p>
             <Button variant="main-button" className="mt-5">
               Join us now

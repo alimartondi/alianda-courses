@@ -3,7 +3,7 @@
 /* ===Hero=== */
 .hero {
   background: var(--main-blue);
-  height: 640px;
+  padding-bottom: 10rem;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -93,16 +93,22 @@
 /* ===Testimonial=== */
 .testimonial-card {
   width: 340px;
-  padding: 1rem 0;
-  border-radius: 12px;
+  padding: 1.2rem 1rem;
 }
+.testimonial-card__image {
+  height: 84px;
+  width: 84px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
 .slick-slide {
-  padding: 1rem 1rem;
+  padding: 1rem;
 }
 .slick-slider .slick-center .testimonial-card {
   box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
   height: 400px;
-  margin-top: -15px;
+  margin-top: -10px;
 }
 
 .slick-dots li button:before {
@@ -126,8 +132,16 @@
 .feautured-card {
   background: #ffffff;
   box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
-  border-radius: 10px;
+  border-radius: 24px;
   transition: ease-in 0.3s;
+}
+
+.feautures-card__icon {
+  height: 80px;
+  width: 80px;
+  background-color: var(--main-blue);
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
 }
 
 /* === Teams === */
@@ -428,7 +442,7 @@
 }
 
 /* ===Responsive Small Media=== */
-@media (min-width: 578px) {
+/* @media (min-width: 578px) {
   .programs-area.container,
   .events-area.container {
     padding-right: 15px;
@@ -445,4 +459,4 @@
     height: 707px;
     background-position: center;
   }
-}
+} */

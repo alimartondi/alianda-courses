@@ -4,7 +4,7 @@ import AboutPic from "../images/about-pic.png";
 
 export default function About() {
   return (
-    <section className="about" id="about">
+    <section className="about px-2 px-md-0" id="about">
       <Container className="about-content pb-5 pb-lg-0">
         <Row className="align-items-center">
           <Col lg={7} className="text-center">
@@ -18,8 +18,8 @@ export default function About() {
               We will learn to make a website starting from the UI-UX design
               using figma, to the coding stage using react and Tailwindcss
             </p>
-            <Button variant="light" className="main-button mt-4">
-              Tekan aku mas
+            <Button variant="main-button" className="mt-4">
+              Learn more
             </Button>
           </Col>
         </Row>

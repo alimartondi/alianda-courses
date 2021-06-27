@@ -11,8 +11,8 @@ export default function PricingPlans() {
           <Col lg={7} className="text-center">
             <h1 className="second-title">Our pricing Plans</h1>
             <p className="sub-title mt-3 text-dark">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              corporis dolores labore? Unde, quaerat deleniti.
+              Some of the class prices we offer, make your choice, achieve your
+              dream
             </p>
           </Col>
         </Row>

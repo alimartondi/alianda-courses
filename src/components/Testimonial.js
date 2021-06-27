@@ -32,6 +32,7 @@ export default class Testimonial extends Component {
           settings: {
             slidesToShow: 1,
             dots: true,
+            centerPadding: "0",
           },
         },
       ],
@@ -50,18 +51,20 @@ export default class Testimonial extends Component {
             </Col>
           </Row>
 
-          <Row className="mt-3 justify-content-around px-lg-5">
+          <Row className="mt-3 justify-content-around px-lg-4 align-items-start">
             <Col lg={12} className="px-0">
               <Slider {...settings}>
                 {testimonialContents.map((content, i) => (
-                  <Card className="testimonial-card border-0 p-2">
+                  <Card className="testimonial-card border-0 p-3">
                     <Card.Body>
-                      <img
-                        src={content.img}
-                        alt={content.name}
-                        className="img-fluid rounded-lg mb-3"
-                      />
-                      <p className="third-title mb-0">{content.name}</p>
+                      <div className="testimonial-card__image">
+                        <img
+                          src={content.img}
+                          alt={content.name}
+                          className="img-fluid mb-3"
+                        />
+                      </div>
+                      <p className="third-title mb-0 mt-3">{content.name}</p>
                       <p className="description">{content.profession}</p>
                       <p className="description">{content.comment}</p>
                     </Card.Body>
@@ -70,7 +73,6 @@ export default class Testimonial extends Component {
               </Slider>
             </Col>
           </Row>
-          <hr className="mt-5" />
         </Container>
       </section>
     );
@@ -86,7 +88,7 @@ const testimonialContents = [
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatem consequatur quia error laboriosam tenetur eius.",
+      "The course is amazing and goes super deep on Tailwind framework and React",
   },
   {
     img: Alex,
@@ -96,7 +98,7 @@ const testimonialContents = [
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatem consequatur quia error laboriosam tenetur eius.",
+      "Yeah, I got a job after taking this course, this is the course I'm looking for, good job man",
   },
   {
     img: Morgan,
@@ -106,7 +108,7 @@ const testimonialContents = [
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatem consequatur quia error laboriosam tenetur eius.",
+      "This is the course I'm looking for, complete with case studies too, so I understand quickly",
   },
   {
     img: Jhon,
@@ -116,6 +118,6 @@ const testimonialContents = [
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
     comment:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatem consequatur quia error laboriosam tenetur eius.",
+      "What an amazing class, recommended by my friend, at first I was hesitant, but after taking this class everything changed everything",
   },
 ];
