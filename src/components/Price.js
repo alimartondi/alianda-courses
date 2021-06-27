@@ -17,7 +17,7 @@ export default function PricingPlans() {
         <Row className="justify-content-center">
           <Col
             lg={12}
-            className="pricing-items d-block d-md-flex text-center justify-content-lg-around pl-3"
+            className="pricing-items d-block d-md-flex text-center justify-content-lg-around pl-3 px-0"
           >
             <div className="pricing-items__grid">
               {pricingContents.map((content, i) => (

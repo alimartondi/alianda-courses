@@ -19,7 +19,8 @@ export default class Testimonial extends Component {
       centerPadding: "10px",
       dots: true,
       infinite: true,
-      speed: 800,
+      speed: 500,
+      draggable: true,
       responsive: [
         {
           breakpoint: 680,
