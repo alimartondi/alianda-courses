@@ -7,12 +7,6 @@ import Robert from "../images/robert.png";
 import Alex from "../images/alex.png";
 import Morgan from "../images/morgan.png";
 import Jhon from "../images/jhon.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 
 export default class Testimonial extends Component {
   render() {
@@ -45,8 +39,8 @@ export default class Testimonial extends Component {
             <Col lg={7} className="text-center">
               <h2 className="second-title">What our customers say</h2>
               <p className="sub-title text-dark">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                voluptatem consequatur quia error laboriosam tenetur eius.
+                listen to some interesting stories from our customers'
+                experiences, and you can be a part of their success stories
               </p>
             </Col>
           </Row>
@@ -55,7 +49,7 @@ export default class Testimonial extends Component {
             <Col lg={12} className="px-0">
               <Slider {...settings}>
                 {testimonialContents.map((content, i) => (
-                  <Card className="testimonial-card border-0 p-3">
+                  <Card className="testimonial-card border-0 p-3" key={i}>
                     <Card.Body>
                       <div className="testimonial-card__image">
                         <img
@@ -65,7 +59,7 @@ export default class Testimonial extends Component {
                         />
                       </div>
                       <p className="third-title mb-0 mt-3">{content.name}</p>
-                      <p className="description">{content.profession}</p>
+                      <p className="small">{content.profession}</p>
                       <p className="description">{content.comment}</p>
                     </Card.Body>
                   </Card>
@@ -118,6 +112,6 @@ const testimonialContents = [
     instagram: "https://www.instagram.com/",
     linkedin: "https://www.linkedin.com/",
     comment:
-      "What an amazing class, recommended by my friend, at first I was hesitant, but after taking this class everything changed everything",
+      "What an amazing class, at first I was hesitant, but after taking this class everything changed",
   },
 ];

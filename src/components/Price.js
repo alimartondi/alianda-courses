@@ -1,5 +1,3 @@
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Button, Row, Col, Container, Card } from "react-bootstrap";
 
@@ -48,78 +46,30 @@ const pricingContents = [
   {
     title: "Starter Plan",
     price: "Free",
-    benefit1: {
-      icon: faCheckCircle,
-      content: "Cost free",
-    },
-    benefit2: {
-      icon: faCheckCircle,
-      content: "Limited accsess",
-    },
-    benefit3: {
-      icon: faCheckCircle,
-      content: "Software design & code",
-    },
-    benefit4: {
-      icon: faCheckCircle,
-      content: "Updated study material",
-    },
+    benefit1: "Cost free",
+    benefit2: "Limited accsess",
+    benefit3: "Software design & code",
+    benefit4: "Updated study material",
   },
   {
     title: "Enterprise Plan",
     price: "RP1.5B",
-    benefit1: {
-      icon: faCheckCircle,
-      content: "Free accsess forever",
-    },
-    benefit2: {
-      icon: faCheckCircle,
-      content: "Online & Offline",
-    },
-    benefit3: {
-      icon: faCheckCircle,
-      content: "Pay only once",
-    },
-    benefit4: {
-      icon: faCheckCircle,
-      content: "Unlimited class",
-    },
-    benefit5: {
-      icon: faCheckCircle,
-      content: "Private group",
-    },
-    benefit6: {
-      icon: faCheckCircle,
-      content: "Master design project",
-    },
-    benefit7: {
-      icon: faCheckCircle,
-      content: "Certificate",
-    },
+    benefit1: "Free accsess forever",
+    benefit2: "Online & Offline",
+    benefit3: "Pay only once",
+    benefit4: "Unlimited class",
+    benefit5: "Private group",
+    benefit6: "Master design project",
+    benefit7: "Certificate",
   },
   {
     title: "Ultimate Plan",
     price: "RP700K",
-    benefit1: {
-      icon: faCheckCircle,
-      content: "Free for 1 year",
-    },
-    benefit2: {
-      icon: faCheckCircle,
-      content: "Online only",
-    },
-    benefit3: {
-      icon: faCheckCircle,
-      content: "Certificate",
-    },
-    benefit4: {
-      icon: faCheckCircle,
-      content: "Unlimited class",
-    },
-    benefit5: {
-      icon: faCheckCircle,
-      content: "Private group",
-    },
+    benefit1: "Free for 1 year",
+    benefit2: "Online only",
+    benefit3: "Certificate",
+    benefit4: "Unlimited class",
+    benefit5: "Private group",
   },
 ];
 
@@ -129,20 +79,14 @@ function PriceCard(props) {
       <h3 className="card-title third-title">{props.title}</h3>
       <h5 className="cost text-center">{props.price}</h5>
       <div className="card-body text-left">
-        <p className="description mb-2">{props.benefit1.content}</p>
-        <p className="description mb-2">{props.benefit2.content}</p>
-        <p className="description mb-2">{props.benefit3.content}</p>
-        <p className="description mb-2">{props.benefit4.content}</p>
-        {/* <p className="description">{props.benefit5.content}</p> */}
-        {/* <p className="description">
-          <FontAwesomeIcon className="mr-3" icon={props.benefit6.icon} />
-          {props.benefit6.content}
-        </p>
-        <p className="description">
-          <FontAwesomeIcon className="mr-3" icon={props.benefit7.icon} />
-          {props.benefit7.content}
-        </p> */}
-        <Button variant="second-button" className="mt-5 w-100">
+        <p className="description mb-2">{props.benefit1}</p>
+        <p className="description mb-2">{props.benefit2}</p>
+        <p className="description mb-2">{props.benefit3}</p>
+        <p className="description mb-2">{props.benefit4}</p>
+        <p className="description mb-2">{props.benefit5}</p>
+        <p className="description mb-2">{props.benefit6}</p>
+        <p className="description mb-2">{props.benefit7}</p>
+        <Button variant="main-button" className="mt-5 w-100">
           Select plan
         </Button>
       </div>

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,Poppins:ital,wght@1,800,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
 :root {
   --main-blue: #1a659e;
   --second-blue: #0162a1;
@@ -151,21 +152,15 @@ code {
 }
 
 /* ===Main Button=== */
-.main-button.btn-light {
+.btn.btn-main-button {
   background-color: #ff6e30;
+  color: white;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn.btn-main-button:hover {
+  background-color: #fc4b00;
   color: var(--main-light);
-  font-weight: 00;
-  border-color: #ff6b35;
-}
-.main-button.btn-light:hover {
-  background-color: transparent;
-  color: #fff;
-}
-.main-button.btn-light:focus,
-.main-button.btn-light:active {
-  border-color: #fff;
-  background-color: transparent;
-  color: #fff;
 }
 
 /* ===Second Button=== */
@@ -176,11 +171,6 @@ code {
   color: var(--main-blue);
 }
 
-.btn.btn-main-button {
-  background-color: #ff6e30;
-  color: white;
-  padding: 0.5rem 1.5rem;
-}
 .btn.btn-second-button {
   background-color: var(--main-blue);
   color: var(--main-light);

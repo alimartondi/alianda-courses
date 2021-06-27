@@ -35,11 +35,7 @@ export default function Tools() {
             </div>
           </Col>
           <Col lg={6} className="order-1 order-lg-2">
-            <img
-              src={CoursesApp}
-              alt="courses-app"
-              className="img-fluid mt-n5"
-            />
+            <img src={CoursesApp} alt="courses-app" className="img-fluid" />
           </Col>
         </Row>
       </Container>

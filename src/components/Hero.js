@@ -21,10 +21,7 @@ export default function Hero() {
                 your most comfortable place and join us, be a successful person
                 from now!
               </p>
-              <Button
-                variant="light mt-4 px-4 py-2 rounded-lg"
-                className="main-button"
-              >
+              <Button variant="main-button px-4 py-2 rounded-lg mt-3">
                 Learn more
               </Button>
             </Col>

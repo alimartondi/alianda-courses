@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <section className="footer-area py-4" id="footer">
+    <section className="footer-area pb-4 pt-3" id="footer">
       <Container>
         <Row>
           <Col

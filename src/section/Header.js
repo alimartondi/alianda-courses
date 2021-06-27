@@ -6,107 +6,6 @@ import "../style/navbar.css";
 import FooterBrand from "../images/footer-brand.svg";
 import Logo from "../images/logo.svg";
 
-// export default function NavBar() {
-//   const [state, setState] = useState({
-//     active: false,
-//   });
-
-//   const open = () => setState(!open);
-
-//   const scrollToTop = () => {
-//     scroll.scrollToTop();
-//   };
-
-//   return (
-//     <nav className="navbar fixed-top">
-//       <Container>
-//         <div className="navbar-logo">
-//           <img
-//             src={Logo}
-//             alt="Logo ISC"
-//             className="img-fluid"
-//             onClick={scrollToTop}
-//           />
-//         </div>
-//         <div className={state.active ? "nav-items active" : "nav-items"}>
-//           <div className="sidebar-brand text-center mt-3 d-block d-xl-none">
-//             <Link to="banner" smooth={true}>
-//               <img src={IscLogo} alt="sidebar logo" onClick={open} />
-//             </Link>
-//           </div>
-//           <Link
-//             activeClass="active"
-//             to="wish"
-//             spy={true}
-//             smooth={true}
-//             offset={-70}
-//             duration={500}
-//             className="nav-link"
-//             onClick={open}
-//           >
-//             Overview
-//           </Link>
-//           <Link
-//             activeClass="active"
-//             to="events"
-//             spy={true}
-//             smooth={true}
-//             offset={-60}
-//             duration={500}
-//             className="nav-link"
-//             onClick={open}
-//           >
-//             About Us
-//           </Link>
-//           <Link
-//             activeClass="active"
-//             to="programs"
-//             spy={true}
-//             smooth={true}
-//             offset={-30}
-//             duration={500}
-//             className="nav-link"
-//             onClick={open}
-//           >
-//             Feautured
-//           </Link>
-//           <Link
-//             activeClass="active"
-//             to="footer"
-//             spy={true}
-//             smooth={true}
-//             offset={30}
-//             duration={500}
-//             className="nav-link"
-//             onClick={open}
-//           >
-//             Price
-//           </Link>
-//           <div className="nav-button">
-//             <Button variant="info mt-5 mt-xl-0 mr-0 mr-xl-2">
-//               Registrasi Peserta
-//             </Button>
-//             <Button variant="outline-info mt-2 mt-xl-0">
-//               Daftar Volunteer
-//             </Button>
-//           </div>
-//         </div>
-//         <Burger
-//           onClick={() => setState({ active: !state.active })}
-//           active={state.active}
-//           burger="slider"
-//           hoverOpacity={0.8}
-//           scale={1.2}
-//           style={{
-//             height: "20px",
-//             padding: "0",
-//             margin: "0",
-//           }}
-//         ></Burger>
-//       </Container>
-//     </nav>
-//   );
-// }
 export default function NavBar() {
   const [state, setState] = useState({
     active: false,
@@ -142,18 +41,17 @@ export default function NavBar() {
             >
               Feautures
             </Link>
-
             <Link
               to="about"
               smooth={true}
               spy={true}
-              offset={-120}
+              offset={-100}
               className="nav-link"
               onClick={open}
             >
               About
             </Link>
-            <Link
+            {/* <Link
               to="category"
               smooth={true}
               spy={true}
@@ -162,12 +60,12 @@ export default function NavBar() {
               onClick={open}
             >
               Category
-            </Link>
+            </Link> */}
             <Link
               to="tools"
               smooth={true}
               spy={true}
-              offset={-150}
+              offset={-100}
               className="nav-link"
               onClick={open}
             >
@@ -177,7 +75,7 @@ export default function NavBar() {
               to="price"
               smooth={true}
               spy={true}
-              offset={-60}
+              offset={-100}
               className="nav-link"
               onClick={open}
             >
@@ -187,14 +85,14 @@ export default function NavBar() {
           <Nav className="nav-btn d-block d-lg-flex flex-lg-nowrap">
             <Button
               variant="outline-light md-info px-4 px-md-2 rounded-lg mt-5 mt-lg-0"
-              href="#"
+              href="/"
               className="second-button"
             >
               Sign up
             </Button>
             <Button
-              variant="light"
-              href="#"
+              variant="main-button"
+              href="/"
               className="main-button px-4 px-md-2 rounded-lg mt-2 mt-lg-0 ml-lg-2"
             >
               Login

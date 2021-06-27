@@ -4,7 +4,7 @@ import "../style/style.css";
 
 export default function RegisterSection() {
   return (
-    <section className="register-area px-2 py-4 px-md-0" id="register">
+    <section className="register-area px-2 px-md-0" id="register">
       <Container className="register-content py-5">
         <Row className="justify-content-center">
           <Col lg={7} className="text-center">
