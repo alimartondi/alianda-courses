@@ -30,16 +30,16 @@ export default function NavBar() {
             <img src={FooterBrand} alt="sidebar logo" onClick={scrollToTop} />
           </div>
           <hr className="d-block d-xl-none text-center sidebar-line" />
-          <Nav className="mr-auto flex-column flex-lg-row">
+          <Nav className="ml-lg-auto flex-column flex-lg-row">
             <Link
-              to="feautured"
+              to="feature"
               smooth={true}
               spy={true}
               offset={-120}
               className="nav-link"
               onClick={open}
             >
-              Feautures
+              Features
             </Link>
             <Link
               to="about"
@@ -51,51 +51,45 @@ export default function NavBar() {
             >
               About
             </Link>
-            {/* <Link
-              to="category"
+            <Link
+              to="course"
               smooth={true}
               spy={true}
-              offset={-70}
+              offset={-180}
               className="nav-link"
               onClick={open}
             >
-              Category
-            </Link> */}
+              Courses
+            </Link>
+
             <Link
-              to="tools"
+              to="application"
               smooth={true}
               spy={true}
-              offset={-100}
+              offset={-160}
               className="nav-link"
               onClick={open}
             >
               Application
             </Link>
             <Link
-              to="price"
+              to="testimonial"
               smooth={true}
               spy={true}
-              offset={-100}
+              offset={-120}
               className="nav-link"
               onClick={open}
             >
-              Price
+              Testimonial
             </Link>
           </Nav>
           <Nav className="nav-btn d-block d-lg-flex flex-lg-nowrap">
             <Button
-              variant="outline-light md-info px-4 px-md-2 rounded-lg mt-5 mt-lg-0"
-              href="/"
-              className="second-button"
-            >
-              Sign up
-            </Button>
-            <Button
               variant="main-button"
               href="/"
-              className="main-button px-4 px-md-2 rounded-lg mt-2 mt-lg-0 ml-lg-2"
+              className="rounded-pill mt-5 mt-lg-0"
             >
-              Login
+              Sign in
             </Button>
           </Nav>
         </div>

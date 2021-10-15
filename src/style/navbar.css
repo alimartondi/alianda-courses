@@ -18,7 +18,7 @@
   background: var(--main-blue);
 }
 
-.navbar-logo img {
+.navbar-brand img {
   max-height: 32px;
   cursor: pointer;
 }
@@ -49,6 +49,12 @@
   font-weight: 500;
   font-size: 22px;
   margin-bottom: 0.7rem;
+}
+
+.nav-link.active,
+.nav-link:hover,
+.nav-link:active {
+  color: var(--main-light);
 }
 
 .nav-items .nav-link {
@@ -106,17 +112,15 @@
   top: -8px;
 }
 
-/* ==End of Humberger Menu Icon== */
-
 /* ===NAVBAR RESPONSIVE=== */
 
 @media (min-width: 1024px) {
   .navbar {
-    height: 80px;
+    height: 100px;
     transition: ease-in-out 0.3s;
   }
 
-  .navbar-logo img {
+  .navbar-brand img {
     max-height: 50px;
   }
 
@@ -137,11 +141,6 @@
     display: none;
   }
 
-  .nav-items .btn-info,
-  .nav-items .btn-outline-info {
-    font-size: 15px;
-  }
-
   .nav-link {
     font-weight: 400;
     font-size: 1rem;
@@ -157,25 +156,8 @@
     transition-delay: 0s;
   }
 
-  .nav-link.active,
-  .nav-link:hover,
-  .nav-link:active {
-    color: var(--main-light);
-  }
-  .nav-btn .btn {
-    font-size: small;
-    font-weight: 300;
-    width: 100px;
-  }
-
-  .nav-btn.second-button {
-    max-width: 90px;
-    font-size: 15px;
-    padding: 4px;
-  }
-
   .navbar.scrolled {
-    height: 70px;
+    height: 80px;
     position: fixed;
   }
 

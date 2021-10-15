@@ -1,287 +1,82 @@
-/*=== ALL CSS STYLE=== */
-
-/* ===Hero=== */
 .hero {
   background: var(--main-blue);
-  padding-bottom: 10rem;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   overflow: visible;
 }
 
-.hero-content {
-  padding-top: 6rem;
-}
-
-/* ===Feautures=== */
-.feautured,
-.tools,
-.price,
-.category,
+.feature,
 .about,
-.register-area {
+.course,
+.testimonial {
   margin-top: 80px;
 }
-.tools {
+.application {
   margin-top: 100px;
 }
-/* ====About Us=== */
-.about-content,
-/* .tools-content, */
-.register-content {
-  /* height: 500px; */
-  background-color: var(--main-blue);
-  border-radius: 20px;
-}
-.about-content img {
-  margin-top: -35px;
-}
-
-/* ===Feautured=== */
-
-.category-card__icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  background-color: var(--main-blue);
-}
-
-/* ===Pricing=== */
-.pricing-items {
-  position: relative;
-  padding-left: 2rem;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-.pricing-items__grid {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  box-sizing: border-box;
-  padding: 5px;
-  float: left;
-  position: relative;
-}
-.pricing-card {
-  display: inline-block;
-  border: none;
-  /* height: 360px; */
-  margin-top: 30px;
-  overflow-x: auto;
-  width: 280px;
-  margin-right: 1.2rem;
-}
-.pricing-card:nth-child(2) {
-  height: auto;
-  margin-top: 0;
-}
-
-.pricing-card .cost {
-  font-size: 35px;
-  font-weight: 700;
-  color: var(--main-blue);
-}
-
-/* ===Testimonial=== */
-.testimonial-card {
-  width: 340px;
-  padding: 1.2rem 1rem;
-}
-.testimonial-card__image {
-  height: 84px;
-  width: 84px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.slick-slide {
-  padding: 1rem 0.8rem;
-}
-.slick-slider .slick-center .testimonial-card {
-  box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
-}
-
-.slick-dots li button:before {
-  font-size: 12px !important;
-  margin-top: 15px;
-}
-
-.slick-dots li.slick-active button:before {
-  color: var(--main-blue) !important;
-}
-
-.testimonialCard-link-social .link-social {
-  font-size: 1.2rem;
-  margin: 0 0.5rem;
-  color: #151515;
-}
-.link-social:hover {
-  color: #292929;
-}
-
-.feautured-card {
+.feature-card {
   background: #ffffff;
   box-shadow: rgb(238 238 238) 0px 2px 14px 0px;
   border-radius: 24px;
   transition: ease-in 0.3s;
 }
-
-.feautures-card__icon {
+.feature-card-icon {
   height: 80px;
   width: 80px;
   background-color: var(--main-blue);
   border-radius: 15px;
-  box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
 }
 
-/* === Teams === */
-.team-card__body {
-  position: relative;
+.application-content {
+  background-color: var(--main-blue);
+  border-radius: 20px;
 }
-.team-card__body:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1)
-  );
-}
-.team-items__card {
-  box-shadow: none !important;
-}
-.team-nickname {
-  position: absolute;
-  bottom: 0;
-  z-index: 10;
-  padding-bottom: 2rem;
-}
-.nickname {
-  text-transform: uppercase;
-  font-size: 3.3rem;
-  font-weight: 800;
-  font-style: italic;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.3),
-    rgba(255, 255, 255, 0)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.fullname {
-  position: relative;
-  top: 0;
-  margin-top: -35px;
-  font: capitalize;
-  color: var(--main-light);
-  font-size: 1.3rem;
+.application-content img {
+  margin-top: -50px;
 }
 
-/* ===Register=== */
-.register-card {
-  height: 300px;
-  max-width: 18rem;
-  padding-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 10;
+.course-card {
+  max-width: 300px;
+  border-radius: 24px;
   overflow: hidden;
-  background-color: rgb(239, 239, 239);
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.register-body .second-title,
-.register-body .subtitle {
-  max-width: 32rem;
+.testimonial-card {
+  padding: 1.2rem 1rem;
+}
+.testimonial-card img {
+  height: 85px;
+  width: 85px;
+  border-radius: 15px;
+}
+.slick-slide {
+  padding: 1rem 0.8rem;
+}
+.slick-dots li button:before {
+  font-size: 9px !important;
+  margin: 0px !important;
+}
+.slick-dots li {
+  margin: 0 !important;
+}
+.slick-dots li.slick-active button:before {
+  color: var(--main-blue) !important;
 }
 
-.register-card::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/shape-2.png);
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.5;
-  z-index: -1;
+.footer {
+  color: var(--main-dark);
 }
-/*===End of Register=== */
-
-/* ===Footer=== */
-.footer-area {
-  margin-top: 100px;
-  position: relative;
-  z-index: 3;
-  background: var(--main-blue);
-  color: var(--main-light);
+.footer .social a {
+  color: var(--main-dark);
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  transition: ease-in 0.3s;
 }
-.footerSoc a {
-  font-size: 2rem;
-  margin-left: 1rem;
-  color: var(--main-light);
-}
-.footerSoc a:hover {
-  color: #cdcdcd;
+.social a:hover {
+  color: var(--main-blue);
 }
 
-.footerLink {
-  margin-top: 0.5rem;
-  display: block;
-  cursor: pointer;
-  color: #fff;
-  font-weight: 400;
-  transform: all 0.1ms ease;
-}
-.footerLink:hover {
-  color: #cdcdcd;
-}
-.footerItems-line {
-  width: 20%;
-  margin-left: auto;
-  border-color: #fff;
-  margin-top: 2rem;
-}
-
-.form-control {
-  border-style: hidden !important;
-  border-bottom: 1px solid #fff !important;
-  border-radius: 0 !important;
-  color: #fff !important;
-  font-size: 1rem;
-}
-.form-control::placeholder {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #fff !important;
-}
-.btn .subscribeBtn {
-  font-size: 0.8rem;
-  font-weight: 200 !important;
-  font-weight: 100 !important;
-}
-
-/* === End of Footer=== */
-
-/* ===404 Notfound=== */
 .notfound-content {
   margin-top: 120px;
 }
@@ -290,167 +85,82 @@
   font-weight: 600;
   margin-bottom: -15px;
 }
-
 .notfound-404 {
   font-size: 80px;
   font-weight: 800;
 }
-
 .notfind {
   font-size: 18px;
   line-height: 1.2rem;
 }
 
-/* End of 404 Notfound=== */
-
-/* ===RESPONSIVE=== */
 @media (min-width: 1024px) {
-  /* ===Banner=== */
-  .hero {
-    height: 700px;
-  }
-  .hero-content {
-    padding-top: 8rem;
-  }
-
-  .feautured,
-  .tools,
-  .price,
+  .feature,
   .about,
-  .register-area {
+  .course,
+  .testimonial {
     margin-top: 120px;
   }
-
-  .register-content {
-    background-color: var(--main-blue);
-    border-radius: 20px;
-  }
-  /* ===End of Banner=== */
-
-  .about-content img {
-    margin-top: -60px;
-    margin-left: -9rem;
+  .application {
+    margin-top: 180px;
   }
 
-  /* ===Programs & Events=== */
-  .pricing-card,
-  .events-card,
-  .feautured-card:hover,
-  .team-items__card,
-  .category-card {
-    width: 100%;
-    margin-right: 0;
+  .course-card {
+    max-width: 360px;
+  }
+  .course-content {
+    padding-right: 130px !important;
+  }
+  .slick-next,
+  .slick-prev {
+    right: 0 !important;
+    top: -30px !important;
+    height: 52px !important;
+    width: 52px !important;
+    background-color: #ff6330 !important;
+    border-radius: 50%;
+  }
+  .slick-next:before,
+  .slick-prev:before {
+    background-image: url("../images/arrow-right-solid.svg");
+    background-repeat: no-repeat;
+    content: "" !important;
+    height: 24px !important;
+    width: 24px !important;
+    position: absolute;
+    right: 12px;
+    top: 13px;
+  }
+  .slick-prev:before {
+    background-image: url("../images/arrow-left-solid.svg");
+  }
+  .slick-prev {
+    margin-left: auto;
+    margin-right: 60px;
+  }
+
+  .application-content {
+    height: 500px;
+  }
+  .application-content img {
+    margin-top: -80px;
+  }
+
+  .feature-card:hover {
     box-shadow: 0px 8px 16px rgb(0 0 0 / 6%);
-    /* box-shadow: 0 2px 14px 0 #eeeeee; */
-  }
-  .advant-items__card {
-    box-shadow: none;
   }
 
-  .pricing-items__grid,
-  .feautured-items__grid,
-  .team-items__grid,
-  .category-items__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
-    margin-top: 1rem;
-  }
-  /* ===End of Programs & Events=== */
-
-  /* ===FAQ=== */
-
-  .accordion .card,
-  .accordion .card .card-header {
-    background-color: #fff;
-    border: none;
-    border-color: transparent;
-    box-shadow: 0px 9px 60px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 9px 60px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border-bottom-left-radius: 5px !important;
-    border-bottom-right-radius: 5px !important;
-  }
-  .accordion .card .card-header.active,
-  .accordion .card .card-header:hover {
-    background: var(--main-gradient);
-    color: #fff;
-    border-bottom-left-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-  }
-
-  .accordion .card-body {
-    background: linear-gradient(
-      90.04deg,
-      #2181b7 1.72%,
-      rgba(23, 151, 223, 0.94) 87.92%
-    );
-    color: #fff;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-
-  /* ===Register=== */
-  .register-card {
-    margin-top: 30px;
-  }
-
-  /* ===Footer=== */
   .footer-link a {
     padding: 1rem;
   }
 }
 
-/* ===Responsive Large Media=== */
-@media (min-width: 900px) and (max-width: 1024px) {
-  .banner-content {
-    margin-left: 3rem;
-  }
-}
-
-/* ===Responsive Medium Media=== */
 @media (min-width: 768px) {
-  .feautured {
-    margin-top: 100px;
-  }
-
-  .footer-items {
-    padding-top: 180px;
-  }
-
-  .footer-items hr {
-    margin-top: 30px;
-    width: 100%;
-  }
-
-  /* ===404 Notfound=== */
   .notfound-404 {
     font-size: 120px;
   }
-
   .notfound {
     max-width: 20rem;
     margin: 0 auto;
   }
-  /* ===End of 404 Notfound=== */
 }
-
-/* ===Responsive Small Media=== */
-/* @media (min-width: 578px) {
-  .programs-area.container,
-  .events-area.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .programs-items,
-  .events-items {
-    padding-left: 0;
-  }
-  .main-hero {
-    height: 707px;
-    background-position: center;
-  }
-} */

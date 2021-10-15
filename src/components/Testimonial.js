@@ -34,32 +34,31 @@ export default class Testimonial extends Component {
     };
 
     return (
-      <section className="pt-4" id="testimonial">
+      <section className="testimonial" id="testimonial">
         <Container className="">
           <Row className="justify-content-center mt-5">
             <Col lg={7} className="text-center">
-              <h2 className="second-title">What our customers say</h2>
-              <p className="sub-title text-dark">
+              <h2 className="second-title">What our students saying</h2>
+              <p className="sub-title text-dark px-md-5">
                 listen to some interesting stories from our customers'
                 experiences, and you can be a part of their success stories
               </p>
             </Col>
           </Row>
-
           <Row className="mt-3 justify-content-around px-lg-4 align-items-start">
             <Col lg={12} className="px-0">
               <Slider {...settings}>
                 {testimonialContents.map((content, i) => (
                   <Card className="testimonial-card border-0 p-3" key={i}>
+                    <Card.Header className="bg-transparent border-0">
+                      <img
+                        src={content.img}
+                        alt={content.name}
+                        className="img-fluid"
+                      />
+                    </Card.Header>
                     <Card.Body>
-                      <div className="testimonial-card__image">
-                        <img
-                          src={content.img}
-                          alt={content.name}
-                          className="img-fluid mb-3"
-                        />
-                      </div>
-                      <p className="third-title mb-0 mt-3">{content.name}</p>
+                      <p className="third-title mb-0">{content.name}</p>
                       <p className="small">{content.profession}</p>
                       <p className="description">{content.comment}</p>
                     </Card.Body>

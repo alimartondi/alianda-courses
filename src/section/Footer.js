@@ -10,14 +10,19 @@ import {
 
 export default function Footer() {
   return (
-    <section className="footer-area pb-4 pt-3" id="footer">
+    <section className="footer py-5 mt-3" id="footer">
       <Container>
+        <Row>
+          <Col lg={12}>
+            <hr className="mb-4" />
+          </Col>
+        </Row>
         <Row>
           <Col
             lg={12}
-            className="d-block d-md-flex text-center align-items-center justify-content-between"
+            className="d-block d-md-flex align-items-center justify-content-between"
           >
-            <div className="footerSoc d-flex mt-3 justify-content-center justify-content-lg-end">
+            <div className="social d-flex justify-content-center justify-content-lg-end">
               <a href="https://www.instagram.com/">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -31,12 +36,11 @@ export default function Footer() {
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
-            <hr className="bg-white" />
-            <p className="small">
+            <div className="small text-center mt-3 mt-md-0">
               &copy; Alianda 2021 | Made With{" "}
               <span style={{ color: "red" }}>&#10084;</span>
               <br />
-            </p>
+            </div>
           </Col>
         </Row>
       </Container>
