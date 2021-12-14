@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link, animateScroll } from "react-scroll";
 import { Button, Container, Nav } from "react-bootstrap";
 import Burger from "react-css-burger";
-import "../style/navbar.css";
 import FooterBrand from "../images/footer-brand.svg";
 import Logo from "../images/logo.svg";
 

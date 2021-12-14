@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import Hero from "../components/Hero";
 import Feature from "../components/Feature";
 import About from "../components/About";
@@ -9,13 +8,13 @@ import Testimonial from "../components/Testimonial";
 
 export default function Main() {
   return (
-    <div className="main">
+    <main className="main">
       <Hero />
       <Feature />
       <About />
       <Course />
       <Application />
       <Testimonial />
-    </div>
+    </main>
   );
 }

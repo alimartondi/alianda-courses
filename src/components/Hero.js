@@ -2,7 +2,6 @@ import React from "react";
 import HeroPic from "../images/businessman.png";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../style/style.css";
 import { Col, Button, Container, Row } from "react-bootstrap";
 
 export default function Hero() {

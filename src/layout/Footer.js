@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <section className="footer py-5 mt-3" id="footer">
+    <footer className="footer py-5 mt-3" id="footer">
       <Container>
         <Row>
           <Col lg={12}>
@@ -44,6 +44,6 @@ export default function Footer() {
           </Col>
         </Row>
       </Container>
-    </section>
+    </footer>
   );
 }
